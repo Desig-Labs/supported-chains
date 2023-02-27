@@ -4,7 +4,6 @@
  */
 
 import { Common } from '@ethereumjs/common'
-import { sha512 } from '@noble/hashes/sha512'
 import { CryptoScheme, CryptoSys, toScheme } from './cryptosys'
 
 export type ChainParams = {
