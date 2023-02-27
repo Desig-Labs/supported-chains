@@ -1,3 +1,8 @@
+/**
+ * Almost EVM-based chains are available here: https://chainlist.wtf/
+ * Other unsupported chains are derived by its hash (../genchain.ts)
+ */
+
 import { Common } from '@ethereumjs/common'
 import { CryptoScheme, CryptoSys, toScheme } from './cryptosys'
 

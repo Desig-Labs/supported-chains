@@ -8,8 +8,8 @@ export class SolanaTestnet extends Chain {
       alias: 'Solana Testnet',
       chainId: '1953402825157648',
       cryptosys: CryptoSys.EdDSA,
-      icon: '',
-      logo: '',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       rpcs: ['https://api.testnet.solana.com'],
       group: 'solana',
     })

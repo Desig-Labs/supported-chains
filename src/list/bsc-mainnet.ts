@@ -8,8 +8,8 @@ export class BscMainnet extends Chain {
       alias: 'Binance',
       chainId: '56',
       cryptosys: CryptoSys.ECDSA,
-      icon: '',
-      logo: '',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.png',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: ['https://bsc-dataseed.binance.org'],
       group: 'binance',
     })

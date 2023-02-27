@@ -8,8 +8,8 @@ export class BscTestnet extends Chain {
       alias: 'BSC Testnet',
       chainId: '97',
       cryptosys: CryptoSys.ECDSA,
-      icon: '',
-      logo: '',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.png',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
       group: 'binance',
     })

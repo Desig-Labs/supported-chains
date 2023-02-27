@@ -8,8 +8,8 @@ export class SolanaMainnet extends Chain {
       alias: 'Solana',
       chainId: '3297058409350302',
       cryptosys: CryptoSys.EdDSA,
-      icon: '',
-      logo: '',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       rpcs: ['https://api.mainnet-beta.solana.com'],
       group: 'solana',
     })
