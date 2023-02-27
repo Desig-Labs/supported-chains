@@ -5,7 +5,7 @@ export enum CryptoSys {
   ECDSA,
 }
 
-export const toScheme = (cryptosys: CryptoSys): CryptoScheme => {
+export const toScheme = (cryptosys: CryptoSys | number): CryptoScheme => {
   switch (cryptosys) {
     case CryptoSys.EdDSA:
       return 'eddsa'
@@ -16,7 +16,7 @@ export const toScheme = (cryptosys: CryptoSys): CryptoScheme => {
   }
 }
 
-export const toSys = (scheme: CryptoScheme): CryptoSys => {
+export const toSys = (scheme: CryptoScheme | string): CryptoSys => {
   switch (scheme) {
     case 'eddsa':
       return CryptoSys.EdDSA
