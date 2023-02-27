@@ -20,7 +20,6 @@ export type ChainParams = {
 }
 
 export class Chain {
-  public readonly key: string
   public readonly name: string
   public readonly alias: string
   public readonly chainId: string
@@ -44,7 +43,6 @@ export class Chain {
     group,
   }: ChainParams) {
     this.name = name
-    this.key = Buffer.from(sha512(name)).toString('hex')
     this.alias = alias || name
     this.chainId = chainId
     this.networkId = networkId || chainId
