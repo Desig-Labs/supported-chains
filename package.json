@@ -1,0 +1,50 @@
+{
+  "name": "@desig/supported-chains",
+  "version": "0.0.1",
+  "description": "The list of supported chains on Desig",
+  "homepage": "https://chainlist.desig.io/",
+  "main": "dist/index.js",
+  "repository": "git@github.com:Desig-Labs/supported-chains.git",
+  "author": {
+    "name": "Tu Phan",
+    "email": "tuphan@descartes.network"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "prebuild": "yarn clean",
+    "build": "tsc",
+    "start": "nodemon src/index.ts",
+    "predeploy": "typedoc --includeVersion --excludePrivate --excludeProtected ./src/index.ts",
+    "deploy": "echo web3.desig.io >> ./docs/CNAME && gh-pages -d docs",
+    "pretest": "yarn build",
+    "test": "mocha --require ts-node/register -t 120000 test/**/*.test.ts",
+    "clean": "rimraf dist"
+  },
+  "engines": {
+    "node": ">=16 <=18"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.1",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.14.2",
+    "bn.js": "^5.2.1",
+    "chai": "^4.3.7",
+    "gh-pages": "^5.0.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "rimraf": "^4.1.2",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.26",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@ethereumjs/common": "^3.0.2",
+    "@noble/hashes": "^1.2.0"
+  }
+}
