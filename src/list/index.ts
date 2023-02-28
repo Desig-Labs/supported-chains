@@ -24,6 +24,11 @@ export const chains: Record<string, Chain> = {
 }
 
 /**
+ * All chain ids
+ */
+export const chainIds = Object.keys(chains)
+
+/**
  * Validate chain id
  * @param chainId The chain id
  * @returns true/false
@@ -32,7 +37,7 @@ export const isSupportedChain = (
   chainId: string,
   scheme?: CryptoScheme,
 ): boolean => {
-  const ok = Object.keys(chains).includes(chainId)
+  const ok = chainIds.includes(chainId)
   if (!ok) return false
   if (scheme) return chains[chainId].cryptoScheme === scheme
   return true
