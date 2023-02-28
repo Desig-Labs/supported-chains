@@ -15,7 +15,7 @@ export type ChainParams = {
   icon: string
   logo?: string
   rpcs: string[]
-  group?: string
+  group: string
 }
 
 export class Chain {
@@ -28,7 +28,7 @@ export class Chain {
   public readonly icon: string
   public readonly logo: string
   public readonly rpcs: string[]
-  public readonly group?: string
+  public readonly group: string
 
   constructor({
     name,
