@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { CryptoSys } from '../cryptosys'
+import { toSolanaAddress } from '../utils'
 
 export class SolanaMainnet extends Chain {
   constructor() {
@@ -15,6 +16,7 @@ export class SolanaMainnet extends Chain {
         'https://api.mainnet-beta.solana.com',
       ],
       group: 'solana',
+      getAddress: toSolanaAddress,
     })
   }
 }

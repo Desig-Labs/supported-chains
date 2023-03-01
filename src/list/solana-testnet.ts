@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { CryptoSys } from '../cryptosys'
+import { toSolanaAddress } from '../utils'
 
 export class SolanaTestnet extends Chain {
   constructor() {
@@ -12,6 +13,7 @@ export class SolanaTestnet extends Chain {
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       rpcs: ['https://api.testnet.solana.com'],
       group: 'solana',
+      getAddress: toSolanaAddress,
     })
   }
 }

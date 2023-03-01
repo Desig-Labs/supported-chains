@@ -16,6 +16,7 @@ export type ChainParams = {
   logo?: string
   rpcs: string[]
   group: string
+  getAddress: (pubkey: Uint8Array) => string
 }
 
 export class Chain {
@@ -29,6 +30,7 @@ export class Chain {
   public readonly logo: string
   public readonly rpcs: string[]
   public readonly group: string
+  public readonly getAddress: (pubkey: Uint8Array) => string
 
   constructor({
     name,
@@ -40,6 +42,7 @@ export class Chain {
     logo,
     rpcs,
     group,
+    getAddress,
   }: ChainParams) {
     this.name = name
     this.alias = alias || name
@@ -51,6 +54,7 @@ export class Chain {
     this.logo = logo || icon
     this.rpcs = rpcs
     this.group = group
+    this.getAddress = getAddress
   }
 
   getEVMCommon = () => {

@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { CryptoSys } from '../cryptosys'
+import { toEvmAddress } from '../utils'
 
 export class BscMainnet extends Chain {
   constructor() {
@@ -12,6 +13,7 @@ export class BscMainnet extends Chain {
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: ['https://bsc-dataseed.binance.org'],
       group: 'binance',
+      getAddress: toEvmAddress,
     })
   }
 }
