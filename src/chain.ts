@@ -3,7 +3,6 @@
  * Other unsupported chains are derived by its hash (../genchain.ts)
  */
 
-import { Common } from '@ethereumjs/common'
 import { CryptoScheme, CryptoSys, toScheme } from './cryptosys'
 
 export type ChainParams = {
@@ -55,16 +54,6 @@ export class Chain {
     this.rpcs = rpcs
     this.group = group
     this.getAddress = getAddress
-  }
-
-  getEVMCommon = () => {
-    if (this.cryptoSystem === CryptoSys.EdDSA)
-      throw new Error('The chain may be not an EVM-based chain')
-    return Common.custom({
-      name: this.name,
-      chainId: BigInt(this.chainId),
-      networkId: BigInt(this.networkId),
-    })
   }
 
   get rpc() {
