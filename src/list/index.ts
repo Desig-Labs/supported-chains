@@ -13,14 +13,14 @@ import { SolanaTestnet } from './solana-testnet'
  * All instances of Chain
  */
 export const chains: Record<string, Chain> = {
-  '1': new EthereumMainnet(),
-  '5': new Goerli(),
-  '11155111': new Sepolia(),
-  '56': new BscMainnet(),
-  '97': new BscTestnet(),
-  '3297058409350302': new SolanaMainnet(),
-  '1953402825157648': new SolanaTestnet(),
-  '3336862955977731': new SolanaDevnet(),
+  '0x1': new EthereumMainnet(),
+  '0x5': new Goerli(),
+  '0xaa36a7': new Sepolia(),
+  '0x38': new BscMainnet(),
+  '0x61': new BscTestnet(),
+  '0xbb6a83b4b049e': new SolanaMainnet(),
+  '0x6f09c097f2c10': new SolanaTestnet(),
+  '0xbdadbf327bc03': new SolanaDevnet(),
 }
 
 /**
