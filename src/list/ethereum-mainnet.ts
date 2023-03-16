@@ -7,7 +7,7 @@ export class EthereumMainnet extends Chain {
     super({
       name: 'Ethereum Mainnet',
       alias: 'Ethereum',
-      chainId: '1',
+      chainId: '0x1',
       cryptosys: CryptoSys.ECDSA,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',

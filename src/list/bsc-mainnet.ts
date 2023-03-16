@@ -7,7 +7,7 @@ export class BscMainnet extends Chain {
     super({
       name: 'Binance Smart Chain Mainnet',
       alias: 'Binance',
-      chainId: '56',
+      chainId: '0x38',
       cryptosys: CryptoSys.ECDSA,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',

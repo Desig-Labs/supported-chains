@@ -7,7 +7,7 @@ export class BscTestnet extends Chain {
     super({
       name: 'Binance Smart Chain Testnet',
       alias: 'BSC Testnet',
-      chainId: '97',
+      chainId: '0x61',
       cryptosys: CryptoSys.ECDSA,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',

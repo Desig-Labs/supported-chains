@@ -7,7 +7,7 @@ export class Sepolia extends Chain {
     super({
       name: 'Sepolia',
       alias: 'Sepolia',
-      chainId: '11155111',
+      chainId: '0xaa36a7',
       cryptosys: CryptoSys.ECDSA,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',

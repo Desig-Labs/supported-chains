@@ -7,7 +7,7 @@ export class Goerli extends Chain {
     super({
       name: 'Goerli',
       alias: 'Goerli',
-      chainId: '5',
+      chainId: '0x5',
       cryptosys: CryptoSys.ECDSA,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',

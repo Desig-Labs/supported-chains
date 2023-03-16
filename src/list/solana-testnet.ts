@@ -7,7 +7,7 @@ export class SolanaTestnet extends Chain {
     super({
       name: 'Solana Testnet',
       alias: 'Solana Testnet',
-      chainId: '1953402825157648',
+      chainId: '0x6f09c097f2c10',
       cryptosys: CryptoSys.EdDSA,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
