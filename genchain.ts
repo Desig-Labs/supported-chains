@@ -1,3 +1,5 @@
+import fs from 'fs'
+import { rimrafSync } from 'rimraf'
 import { sha512 } from '@noble/hashes/sha512'
 import BN from 'bn.js'
 
@@ -42,7 +44,16 @@ const chainIds: Array<{ name: string; id: number }> = [
   },
 ]
 
-chainIds.forEach(({ name, id }) => {
+rimrafSync('./index.md')
+fs.copyFileSync('./README.md', './index.md')
+fs.appendFileSync('./index.md', '\n# References\n')
+fs.appendFileSync('./index.md', '| # | Name | Chain ID | Hex |\n')
+fs.appendFileSync('./index.md', '| - | - | - | - |\n')
+chainIds.forEach(({ name, id }, i) => {
   const hex = new BN(id).toArrayLike(Buffer, 'be').toString('hex')
+  fs.appendFileSync(
+    './index.md',
+    `| ${i} | ${name} | ${id} | 0x${hex.replace(/^0+/, '')} |\n`,
+  )
   console.log(`✅ ${name} - ${id}: 0x${hex.replace(/^0+/, '')}`)
 })
