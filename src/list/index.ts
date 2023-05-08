@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { Code } from '../code'
+import { Curve } from '../curve'
 import { BscMainnet } from './bsc-mainnet'
 import { BscTestnet } from './bsc-testnet'
 import { EthereumMainnet } from './ethereum-mainnet'
@@ -33,10 +33,10 @@ export const chainIds = Object.keys(chains)
  * @param chainId The chain id
  * @returns true/false
  */
-export const isSupportedChain = (chainId: string, code?: Code): boolean => {
+export const isSupportedChain = (chainId: string, curve?: Curve): boolean => {
   const ok = chainIds.includes(chainId)
   if (!ok) return false
-  if (code) return chains[chainId].code === code
+  if (curve) return chains[chainId].curve === curve
   return true
 }
 
