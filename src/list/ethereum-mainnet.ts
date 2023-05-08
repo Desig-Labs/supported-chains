@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { CryptoSys } from '../cryptosys'
+import { Code } from '../code'
 import { toEvmAddress } from '../utils'
 
 export class EthereumMainnet extends Chain {
@@ -8,7 +8,7 @@ export class EthereumMainnet extends Chain {
       name: 'Ethereum Mainnet',
       alias: 'Ethereum',
       chainId: '0x1',
-      cryptosys: CryptoSys.ECDSA,
+      code: Code.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
       rpcs: ['wss://mainnet.infura.io/ws/v3/783c24a3a364474a8dbed638263dc410'],

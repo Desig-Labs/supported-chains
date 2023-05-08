@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { CryptoSys } from '../cryptosys'
+import { Code } from '../code'
 import { toSolanaAddress } from '../utils'
 
 export class SolanaMainnet extends Chain {
@@ -8,7 +8,7 @@ export class SolanaMainnet extends Chain {
       name: 'Solana Mainnet',
       alias: 'Solana',
       chainId: '0xbb6a83b4b049e',
-      cryptosys: CryptoSys.EdDSA,
+      code: Code.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       rpcs: [

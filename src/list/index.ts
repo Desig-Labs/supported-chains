@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { CryptoScheme } from '../cryptosys'
+import { Code } from '../code'
 import { BscMainnet } from './bsc-mainnet'
 import { BscTestnet } from './bsc-testnet'
 import { EthereumMainnet } from './ethereum-mainnet'
@@ -33,13 +33,10 @@ export const chainIds = Object.keys(chains)
  * @param chainId The chain id
  * @returns true/false
  */
-export const isSupportedChain = (
-  chainId: string,
-  scheme?: CryptoScheme,
-): boolean => {
+export const isSupportedChain = (chainId: string, code?: Code): boolean => {
   const ok = chainIds.includes(chainId)
   if (!ok) return false
-  if (scheme) return chains[chainId].cryptoScheme === scheme
+  if (code) return chains[chainId].code === code
   return true
 }
 

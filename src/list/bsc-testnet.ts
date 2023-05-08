@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { CryptoSys } from '../cryptosys'
+import { Code } from '../code'
 import { toEvmAddress } from '../utils'
 
 export class BscTestnet extends Chain {
@@ -8,7 +8,7 @@ export class BscTestnet extends Chain {
       name: 'Binance Smart Chain Testnet',
       alias: 'BSC Testnet',
       chainId: '0x61',
-      cryptosys: CryptoSys.ECDSA,
+      code: Code.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: ['https://data-seed-prebsc-1-s1.binance.org:8545'],

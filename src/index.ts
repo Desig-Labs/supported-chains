@@ -1,4 +1,4 @@
 export * from './chain'
-export * from './cryptosys'
+export * from './code'
 export * from './list'
 export * from './utils'

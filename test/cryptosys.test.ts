@@ -1,3 +1,3 @@
-describe('scryptosys', () => {
-  it('sys to scheme', () => {})
+describe('code', () => {
+  it('code', () => {})
 })
