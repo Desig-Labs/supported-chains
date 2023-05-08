@@ -1,4 +1,4 @@
 export * from './chain'
-export * from './code'
+export * from './curve'
 export * from './list'
 export * from './utils'

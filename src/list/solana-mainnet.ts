@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { Code } from '../code'
+import { Curve } from '../curve'
 import { toSolanaAddress } from '../utils'
 
 export class SolanaMainnet extends Chain {
@@ -8,7 +8,7 @@ export class SolanaMainnet extends Chain {
       name: 'Solana Mainnet',
       alias: 'Solana',
       chainId: '0xbb6a83b4b049e',
-      code: Code.ed25519,
+      curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       rpcs: [

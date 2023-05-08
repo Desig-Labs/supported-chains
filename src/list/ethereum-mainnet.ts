@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { Code } from '../code'
+import { Curve } from '../curve'
 import { toEvmAddress } from '../utils'
 
 export class EthereumMainnet extends Chain {
@@ -8,7 +8,7 @@ export class EthereumMainnet extends Chain {
       name: 'Ethereum Mainnet',
       alias: 'Ethereum',
       chainId: '0x1',
-      code: Code.secp256k1,
+      curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
       rpcs: ['wss://mainnet.infura.io/ws/v3/783c24a3a364474a8dbed638263dc410'],

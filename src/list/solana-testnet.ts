@@ -1,5 +1,5 @@
 import { Chain } from '../chain'
-import { Code } from '../code'
+import { Curve } from '../curve'
 import { toSolanaAddress } from '../utils'
 
 export class SolanaTestnet extends Chain {
@@ -8,7 +8,7 @@ export class SolanaTestnet extends Chain {
       name: 'Solana Testnet',
       alias: 'Solana Testnet',
       chainId: '0x6f09c097f2c10',
-      code: Code.ed25519,
+      curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       rpcs: ['https://api.testnet.solana.com'],

@@ -3,14 +3,14 @@
  * Other unsupported chains are derived by its hash (../genchain.ts)
  */
 
-import { Code } from './code'
+import { Curve } from './curve'
 
 export type ChainParams = {
   name: string
   alias?: string
   chainId: string
   networkId?: string
-  code: Code
+  curve: Curve
   icon: string
   logo?: string
   rpcs: string[]
@@ -23,7 +23,7 @@ export class Chain {
   public readonly alias: string
   public readonly chainId: string
   public readonly networkId: string
-  public readonly code: Code
+  public readonly curve: Curve
   public readonly icon: string
   public readonly logo: string
   public readonly rpcs: string[]
@@ -35,7 +35,7 @@ export class Chain {
     alias,
     chainId,
     networkId,
-    code,
+    curve,
     icon,
     logo,
     rpcs,
@@ -46,7 +46,7 @@ export class Chain {
     this.alias = alias || name
     this.chainId = chainId
     this.networkId = networkId || chainId
-    this.code = code
+    this.curve = curve
     this.icon = icon
     this.logo = logo || icon
     this.rpcs = rpcs
