@@ -51,6 +51,21 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
     id: customizeChainId('Solana Devnet'),
     curve: Curve.ed25519,
   },
+  {
+    name: 'Sui Mainnet',
+    id: customizeChainId('Sui Mainnet'),
+    curve: Curve.ed25519,
+  },
+  {
+    name: 'Sui Testnet',
+    id: customizeChainId('Sui Testnet'),
+    curve: Curve.ed25519,
+  },
+  {
+    name: 'Sui Devnet',
+    id: customizeChainId('Sui Devnet'),
+    curve: Curve.ed25519,
+  },
 ]
 
 rimrafSync('./index.md')
