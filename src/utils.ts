@@ -8,11 +8,15 @@ import { encode } from 'bs58'
  * @returns Evm address with checksum
  */
 export const toEvmAddress = (pubkey: Uint8Array) => {
-  const point = Point.fromHex(pubkey)
-  const pub = point.toRawBytes().subarray(1)
-  const hash = utils.bytesToHex(keccak_256(pub).slice(-20))
-  const address = `0x${hash}`
-  return address
+  try {
+    const point = Point.fromHex(pubkey)
+    const pub = point.toRawBytes().subarray(1)
+    const hash = utils.bytesToHex(keccak_256(pub).slice(-20))
+    const address = `0x${hash}`
+    return address
+  } catch (er) {
+    return ''
+  }
 }
 
 /**
@@ -21,5 +25,9 @@ export const toEvmAddress = (pubkey: Uint8Array) => {
  * @returns Solana address
  */
 export const toSolanaAddress = (pubkey: Uint8Array) => {
-  return encode(pubkey)
+  try {
+    return encode(pubkey)
+  } catch (er) {
+    return ''
+  }
 }
