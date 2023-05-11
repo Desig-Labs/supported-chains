@@ -8,6 +8,9 @@ import { Sepolia } from './sepolia'
 import { SolanaDevnet } from './solana-devnet'
 import { SolanaMainnet } from './solana-mainnet'
 import { SolanaTestnet } from './solana-testnet'
+import { SuiMainnet } from './sui-mainnet'
+import { SuiTestnet } from './sui-testnet'
+import { SuiDevnet } from './sui-devnet'
 
 /**
  * All instances of Chain
@@ -21,6 +24,9 @@ export const chains: Record<string, Chain> = {
   '0xbb6a83b4b049e': new SolanaMainnet(),
   '0x6f09c097f2c10': new SolanaTestnet(),
   '0xbdadbf327bc03': new SolanaDevnet(),
+  '0xb0ae19bc39993': new SuiMainnet(),
+  '0x1e157a4655b689': new SuiTestnet(),
+  '0x5613adbe82509': new SuiDevnet(),
 }
 
 /**
@@ -59,4 +65,7 @@ export {
   SolanaMainnet,
   SolanaTestnet,
   SolanaDevnet,
+  SuiMainnet,
+  SuiTestnet,
+  SuiDevnet,
 }
