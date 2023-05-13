@@ -1,6 +1,7 @@
 import { Point } from '@noble/secp256k1'
-import { bytesToHex } from '@noble/hashes/utils'
+import { bytesToHex, concatBytes } from '@noble/hashes/utils'
 import { keccak_256 } from '@noble/hashes/sha3'
+import { blake2b } from '@noble/hashes/blake2b'
 import { encode } from 'bs58'
 
 /**
@@ -40,7 +41,11 @@ export const toSolanaAddress = (pubkey: Uint8Array) => {
  */
 export const toSuiAddress = (pubkey: Uint8Array) => {
   try {
-    return `0x${bytesToHex(pubkey)}`
+    const seed = concatBytes(new Uint8Array[0](), pubkey)
+    const hash = bytesToHex(blake2b(seed, { dkLen: 32 }))
+      .slice(0, 64)
+      .toLowerCase()
+    return `0x${hash}`
   } catch (er) {
     return ''
   }
