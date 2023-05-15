@@ -41,7 +41,7 @@ export const toSolanaAddress = (pubkey: Uint8Array) => {
  */
 export const toSuiAddress = (pubkey: Uint8Array) => {
   try {
-    const seed = concatBytes(new Uint8Array[0](), pubkey)
+    const seed = concatBytes(new Uint8Array([0]), pubkey)
     const hash = bytesToHex(blake2b(seed, { dkLen: 32 }))
       .slice(0, 64)
       .toLowerCase()
