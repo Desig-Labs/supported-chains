@@ -11,7 +11,10 @@ export class BscMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
-      rpcs: ['https://bsc-dataseed.binance.org'],
+      rpcs: [
+        'wss://light-newest-vineyard.bsc.quiknode.pro/3271e15ee3c81409ad5b4a5de629706a5af9ad6e',
+        'https://bsc-dataseed.binance.org',
+      ],
       group: 'binance',
       getAddress: toEvmAddress,
     })
