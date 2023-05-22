@@ -9,7 +9,7 @@ export class SuiMainnet extends Chain {
       alias: 'Sui',
       chainId: '0xb0ae19bc39993',
       curve: Curve.ed25519,
-      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-icon.png',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-logo.svg',
       rpcs: ['https://rpc.mainnet.sui.io'],
       group: 'sui',

@@ -10,7 +10,7 @@ export class SolanaTestnet extends Chain {
       chainId: '0x6f09c097f2c10',
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
-      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-logo.svg',
       rpcs: ['https://api.testnet.solana.com'],
       group: 'solana',
       getAddress: toSolanaAddress,

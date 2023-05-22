@@ -9,7 +9,7 @@ export class Goerli extends Chain {
       alias: 'Goerli',
       chainId: '0x5',
       curve: Curve.secp256k1,
-      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.png',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
       rpcs: ['wss://goerli.infura.io/ws/v3/783c24a3a364474a8dbed638263dc410'],
       group: 'ethereum',
