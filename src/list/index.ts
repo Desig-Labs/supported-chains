@@ -11,6 +11,9 @@ import { SolanaTestnet } from './solana-testnet'
 import { SuiMainnet } from './sui-mainnet'
 import { SuiTestnet } from './sui-testnet'
 import { SuiDevnet } from './sui-devnet'
+import { AptosMainnet } from './aptos-mainnet'
+import { AptosTestnet } from './aptos-testnet'
+import { AptosDevnet } from './aptos-devnet'
 
 /**
  * All instances of Chain
@@ -27,6 +30,9 @@ export const chains: Record<string, Chain> = {
   '0xb0ae19bc39993': new SuiMainnet(),
   '0x1e157a4655b689': new SuiTestnet(),
   '0x5613adbe82509': new SuiDevnet(),
+  '0x21c26a5834152': new AptosMainnet(),
+  '0x98a2cc14e0838': new AptosTestnet(),
+  '0x227464c4a29ee': new AptosDevnet(),
 }
 
 /**
@@ -68,4 +74,7 @@ export {
   SuiMainnet,
   SuiTestnet,
   SuiDevnet,
+  AptosMainnet,
+  AptosTestnet,
+  AptosDevnet,
 }
