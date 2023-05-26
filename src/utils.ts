@@ -50,3 +50,17 @@ export const toSuiAddress = (pubkey: Uint8Array) => {
     return ''
   }
 }
+
+/**
+ * Convert a pubkey to an aptos address
+ * @param pubkey Pubkey
+ * @returns Aptos address
+ */
+export const toAptosAddress = (pubkey: Uint8Array) => {
+  try {
+    const hex = bytesToHex(pubkey)
+    return `0x${hex}`
+  } catch (er) {
+    return ''
+  }
+}

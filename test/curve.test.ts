@@ -1,3 +1,0 @@
-describe('curve', () => {
-  it('curve', () => {})
-})
