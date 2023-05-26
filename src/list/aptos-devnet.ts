@@ -6,7 +6,7 @@ export class AptosDevnet extends Chain {
   constructor() {
     super({
       name: 'Aptos Devnet',
-      alias: 'Aptos',
+      alias: 'Aptos Devnet',
       chainId: '0x227464c4a29ee',
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-icon.svg',
