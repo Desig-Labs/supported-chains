@@ -13,6 +13,7 @@ export class BscTestnet extends Chain {
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: [
         'wss://hardworking-multi-dawn.bsc-testnet.quiknode.pro/2b6e0a376b43cc4dd95f014ba53f22e5366408c8',
+        'https://hardworking-multi-dawn.bsc-testnet.quiknode.pro/2b6e0a376b43cc4dd95f014ba53f22e5366408c8/',
         'https://data-seed-prebsc-1-s1.binance.org:8545',
       ],
       group: 'binance',

@@ -13,6 +13,7 @@ export class BscMainnet extends Chain {
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: [
         'wss://light-newest-vineyard.bsc.quiknode.pro/3271e15ee3c81409ad5b4a5de629706a5af9ad6e',
+        'https://light-newest-vineyard.bsc.quiknode.pro/3271e15ee3c81409ad5b4a5de629706a5af9ad6e/',
         'https://bsc-dataseed.binance.org',
       ],
       group: 'binance',

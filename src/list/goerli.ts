@@ -11,7 +11,10 @@ export class Goerli extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
-      rpcs: ['wss://goerli.infura.io/ws/v3/783c24a3a364474a8dbed638263dc410'],
+      rpcs: [
+        'wss://goerli.infura.io/ws/v3/783c24a3a364474a8dbed638263dc410',
+        'https://goerli.infura.io/v3/783c24a3a364474a8dbed638263dc410',
+      ],
       group: 'ethereum',
       getAddress: toEvmAddress,
     })
