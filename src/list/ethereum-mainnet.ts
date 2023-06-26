@@ -12,8 +12,8 @@ export class EthereumMainnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
       rpcs: [
-        'wss://mainnet.infura.io/ws/v3/783c24a3a364474a8dbed638263dc410',
-        'https://mainnet.infura.io/v3/783c24a3a364474a8dbed638263dc410',
+        'wss://mainnet.infura.io/ws/v3/93597110afce4130a8f962c0abf2f73c',
+        'https://mainnet.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
       ],
       group: 'ethereum',
       getAddress: toEvmAddress,
