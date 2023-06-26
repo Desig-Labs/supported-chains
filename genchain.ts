@@ -37,6 +37,16 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
     curve: Curve.secp256k1,
   },
   {
+    name: 'ZetaChain Athens Testnet',
+    id: 7001,
+    curve: Curve.secp256k1,
+  },
+  {
+    name: 'ZetaChain Mainnet',
+    id: 7000,
+    curve: Curve.secp256k1,
+  },
+  {
     name: 'Solana Mainnet',
     id: customizeChainId('Solana Mainnet'),
     curve: Curve.ed25519,
