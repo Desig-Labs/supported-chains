@@ -47,6 +47,21 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
     curve: Curve.secp256k1,
   },
   {
+    name: 'Hedera Mainnet',
+    id: 295,
+    curve: Curve.secp256k1,
+  },
+  {
+    name: 'Hedera Testnet',
+    id: 296,
+    curve: Curve.secp256k1,
+  },
+  {
+    name: 'Hedera Previewnet',
+    id: 297,
+    curve: Curve.secp256k1,
+  },
+  {
     name: 'Solana Mainnet',
     id: customizeChainId('Solana Mainnet'),
     curve: Curve.ed25519,
