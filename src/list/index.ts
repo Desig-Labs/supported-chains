@@ -16,6 +16,9 @@ import { AptosTestnet } from './aptos-testnet'
 import { AptosDevnet } from './aptos-devnet'
 import { ZetaTestnet } from './zeta-testnet'
 import { ZetaMainnet } from './zeta-mainnet'
+import { HederaTestnet } from './hedera-testnet'
+import { HederaPreviewnet } from './hedera-previewnet'
+import { HederaMainnet } from './hedera-mainnet'
 
 /**
  * All instances of Chain
@@ -37,6 +40,9 @@ export const chains: Record<string, Chain> = {
   '0x227464c4a29ee': new AptosDevnet(),
   '0x1b59': new ZetaTestnet(),
   '0x1b58': new ZetaMainnet(),
+  '0x127': new HederaMainnet(),
+  '0x128': new HederaTestnet(),
+  '0x129': new HederaPreviewnet(),
 }
 
 /**
@@ -83,4 +89,7 @@ export {
   AptosDevnet,
   ZetaTestnet,
   ZetaMainnet,
+  HederaMainnet,
+  HederaPreviewnet,
+  HederaTestnet,
 }
