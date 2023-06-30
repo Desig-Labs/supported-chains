@@ -18,7 +18,7 @@ import { ZetaTestnet } from './zeta-testnet'
 import { HederaTestnet } from './hedera-testnet'
 import { HederaPreviewnet } from './hedera-previewnet'
 import { HederaMainnet } from './hedera-mainnet'
-
+import { LineaTestnet } from './linea-testnet'
 /**
  * All instances of Chain
  */
@@ -41,6 +41,7 @@ export const chains: Record<string, Chain> = {
   '0x127': new HederaMainnet(),
   '0x128': new HederaTestnet(),
   '0x129': new HederaPreviewnet(),
+  '0xe704': new LineaTestnet(),
 }
 
 /**
@@ -89,4 +90,5 @@ export {
   HederaMainnet,
   HederaPreviewnet,
   HederaTestnet,
+  LineaTestnet,
 }
