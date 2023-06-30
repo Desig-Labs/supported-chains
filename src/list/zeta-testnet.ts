@@ -5,7 +5,7 @@ import { toEvmAddress } from '../utils'
 export class ZetaTestnet extends Chain {
   constructor() {
     super({
-      name: 'ZetaChain Athens Testnet',
+      name: 'ZetaChain Athens2 Testnet',
       alias: 'ZetaChain Athens2 Testnet',
       chainId: '0x1b59',
       curve: Curve.secp256k1,
