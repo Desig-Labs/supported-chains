@@ -66,6 +66,17 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
     id: 59140,
     curve: Curve.secp256k1,
   },
+
+  {
+    name: 'Polygon zkEVM Testnet',
+    id: 1442,
+    curve: Curve.secp256k1,
+  },
+  {
+    name: 'Polygon zkEVM Mainnet',
+    id: 1101,
+    curve: Curve.secp256k1,
+  },
   {
     name: 'Solana Mainnet',
     id: customizeChainId('Solana Mainnet'),

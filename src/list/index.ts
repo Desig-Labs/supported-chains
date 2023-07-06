@@ -19,6 +19,9 @@ import { HederaTestnet } from './hedera-testnet'
 import { HederaPreviewnet } from './hedera-previewnet'
 import { HederaMainnet } from './hedera-mainnet'
 import { LineaTestnet } from './linea-testnet'
+import { PolygonZkEVMTestnet } from './polygon-zkevm-testnet'
+import { PolygonZkEVMMainNet } from './polygon-zkevm-mainnet'
+
 /**
  * All instances of Chain
  */
@@ -42,6 +45,8 @@ export const chains: Record<string, Chain> = {
   '0x128': new HederaTestnet(),
   '0x129': new HederaPreviewnet(),
   '0xe704': new LineaTestnet(),
+  '0x5a2': new PolygonZkEVMTestnet(),
+  '0x44d': new PolygonZkEVMMainNet(),
 }
 
 /**
@@ -91,4 +96,6 @@ export {
   HederaPreviewnet,
   HederaTestnet,
   LineaTestnet,
+  PolygonZkEVMTestnet,
+  PolygonZkEVMMainNet,
 }
