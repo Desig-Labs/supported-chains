@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toSolanaAddress } from '../utils'
 
 export class SolanaMainnet extends Chain {
@@ -15,7 +16,7 @@ export class SolanaMainnet extends Chain {
         'https://radial-billowing-gas.solana-mainnet.quiknode.pro/9d19e80c758eb5bd7b86d912e9345aa153db6a8f/',
         'https://api.mainnet-beta.solana.com',
       ],
-      group: 'solana',
+      group: GroupChain.Solana,
       getAddress: toSolanaAddress,
     })
   }

@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toSuiAddress } from '../utils'
 
 export class SuiTestnet extends Chain {
@@ -12,7 +13,7 @@ export class SuiTestnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-logo.svg',
       rpcs: ['https://fullnode.testnet.sui.io'],
-      group: 'sui',
+      group: GroupChain.Sui,
       getAddress: toSuiAddress,
     })
   }
