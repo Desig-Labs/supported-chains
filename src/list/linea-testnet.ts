@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class LineaTestnet extends Chain {
@@ -15,7 +16,7 @@ export class LineaTestnet extends Chain {
         'wss://linea-goerli.infura.io/v3/21e28f1b90ea47368d9d7e2ba82e87e3',
         'https://linea-goerli.infura.io/v3/21e28f1b90ea47368d9d7e2ba82e87e3',
       ],
-      group: 'linea',
+      group: GroupChain.Linea,
       getAddress: toEvmAddress,
     })
   }

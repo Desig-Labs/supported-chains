@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class BscTestnet extends Chain {
@@ -16,7 +17,7 @@ export class BscTestnet extends Chain {
         'https://hardworking-multi-dawn.bsc-testnet.quiknode.pro/2b6e0a376b43cc4dd95f014ba53f22e5366408c8/',
         'https://data-seed-prebsc-1-s1.binance.org:8545',
       ],
-      group: 'binance',
+      group: GroupChain.Binance,
       getAddress: toEvmAddress,
     })
   }

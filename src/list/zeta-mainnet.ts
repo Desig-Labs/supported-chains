@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class ZetaMainnet extends Chain {
@@ -15,7 +16,7 @@ export class ZetaMainnet extends Chain {
         'wss://api-lb.athens2.zetachain.com:26657/websocket',
         'https://api.mainnet.zetachain.com/evm',
       ],
-      group: 'zeta',
+      group: GroupChain.Zeta,
       getAddress: toEvmAddress,
     })
   }
