@@ -11,72 +11,21 @@ const customizeChainId = (name: string) => {
 }
 
 const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
-  {
-    name: 'Ethereum Mainnet',
-    id: 1,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Goerli',
-    id: 5,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Sepolia',
-    id: 11155111,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Binance Smart Chain Mainnet',
-    id: 56,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Binance Smart Chain Testnet',
-    id: 97,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'ZetaChain Athens Testnet',
-    id: 7001,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'ZetaChain Mainnet',
-    id: 7000,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Hedera Mainnet',
-    id: 295,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Hedera Testnet',
-    id: 296,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Hedera Previewnet',
-    id: 297,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Linea Testnet',
-    id: 59140,
-    curve: Curve.secp256k1,
-  },
-
-  {
-    name: 'Polygon zkEVM Testnet',
-    id: 1442,
-    curve: Curve.secp256k1,
-  },
-  {
-    name: 'Polygon zkEVM Mainnet',
-    id: 1101,
-    curve: Curve.secp256k1,
-  },
+  { name: 'Ethereum Mainnet', id: 1, curve: Curve.secp256k1 },
+  { name: 'Goerli', id: 5, curve: Curve.secp256k1 },
+  { name: 'Sepolia', id: 11155111, curve: Curve.secp256k1 },
+  { name: 'Binance Smart Chain Mainnet', id: 56, curve: Curve.secp256k1 },
+  { name: 'Binance Smart Chain Testnet', id: 97, curve: Curve.secp256k1 },
+  { name: 'ZetaChain Athens Testnet', id: 7001, curve: Curve.secp256k1 },
+  { name: 'ZetaChain Mainnet', id: 7000, curve: Curve.secp256k1 },
+  { name: 'Hedera Mainnet', id: 295, curve: Curve.secp256k1 },
+  { name: 'Hedera Testnet', id: 296, curve: Curve.secp256k1 },
+  { name: 'Hedera Previewnet', id: 297, curve: Curve.secp256k1 },
+  { name: 'Linea Testnet', id: 59140, curve: Curve.secp256k1 },
+  { name: 'Polygon zkEVM Testnet', id: 1442, curve: Curve.secp256k1 },
+  { name: 'Polygon zkEVM Mainnet', id: 1101, curve: Curve.secp256k1 },
+  { name: 'Moonbase Alpha', id: 1287, curve: Curve.secp256k1 },
+  { name: 'Moonbeam', id: 1284, curve: Curve.secp256k1 },
   {
     name: 'Solana Mainnet',
     id: customizeChainId('Solana Mainnet'),
