@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class PolygonZkEVMTestnet extends Chain {
@@ -15,7 +16,7 @@ export class PolygonZkEVMTestnet extends Chain {
         'wss://rpc.ankr.com/polygon_zkevm_testnet/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
         'https://rpc.ankr.com/polygon_zkevm_testnet/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
       ],
-      group: 'polygon_zkevm',
+      group: GroupChain.Polygon_zkevm,
       getAddress: toEvmAddress,
     })
   }

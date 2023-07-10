@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class MoonBaseAlpha extends Chain {
@@ -15,7 +16,7 @@ export class MoonBaseAlpha extends Chain {
         'wss://wss.api.moonbase.moonbeam.network',
         'https://rpc.api.moonbase.moonbeam.network',
       ],
-      group: 'moonbeam',
+      group: GroupChain.Moonbeam,
       getAddress: toEvmAddress,
     })
   }

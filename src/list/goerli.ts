@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class Goerli extends Chain {
@@ -15,7 +16,7 @@ export class Goerli extends Chain {
         'wss://goerli.infura.io/ws/v3/93597110afce4130a8f962c0abf2f73c',
         'https://goerli.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
       ],
-      group: 'ethereum',
+      group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
     })
   }

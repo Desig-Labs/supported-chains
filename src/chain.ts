@@ -4,6 +4,7 @@
  */
 
 import { Curve } from './curve'
+import { GroupChain } from './types'
 
 export type ChainParams = {
   name: string
@@ -14,7 +15,7 @@ export type ChainParams = {
   icon: string
   logo?: string
   rpcs: string[]
-  group: string
+  group: GroupChain
   getAddress: (pubkey: Uint8Array) => string
 }
 

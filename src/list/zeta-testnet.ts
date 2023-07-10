@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class ZetaTestnet extends Chain {
@@ -15,7 +16,7 @@ export class ZetaTestnet extends Chain {
         'wss://rpc.ankr.com/zetachain_evm_testnet/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
         'https://api.athens2.zetachain.com/evm',
       ],
-      group: 'zeta',
+      group: GroupChain.Zeta,
       getAddress: toEvmAddress,
     })
   }

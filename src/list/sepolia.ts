@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class Sepolia extends Chain {
@@ -15,7 +16,7 @@ export class Sepolia extends Chain {
         'wss://sepolia.infura.io/ws/v3/93597110afce4130a8f962c0abf2f73c',
         'https://sepolia.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
       ],
-      group: 'ethereum',
+      group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
     })
   }

@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
 export class HederaMainnet extends Chain {
@@ -15,7 +16,7 @@ export class HederaMainnet extends Chain {
         'mainnet-public.mirrornode.hedera.com:443',
         'https://mainnet.hashio.io/api',
       ],
-      group: 'hedera',
+      group: GroupChain.Hedera,
       getAddress: toEvmAddress,
     })
   }

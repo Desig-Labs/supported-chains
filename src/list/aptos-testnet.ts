@@ -1,5 +1,6 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
+import { GroupChain } from '../types'
 import { toAptosAddress } from '../utils'
 
 export class AptosTestnet extends Chain {
@@ -12,7 +13,7 @@ export class AptosTestnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-logo.png',
       rpcs: ['https://fullnode.testnet.aptoslabs.com'],
-      group: 'aptos',
+      group: GroupChain.Aptos,
       getAddress: toAptosAddress,
     })
   }
