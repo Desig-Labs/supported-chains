@@ -47,14 +47,6 @@ export const toCosmosAddress = (
 }
 
 /**
- * Convert a compressed pubkey to an Sei address
- * @param pubkey Compressed pubkey
- * @returns
- */
-export const toSeiAddress = (pubkey: Uint8Array): string =>
-  toCosmosAddress(pubkey, 'sei')
-
-/**
  * Convert a pubkey to a solana address
  * @param pubkey Pubkey
  * @returns Solana address

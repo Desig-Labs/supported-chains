@@ -2,8 +2,8 @@ import { getPublicKey, utils } from '@noble/secp256k1'
 import { randomBytes } from '@noble/hashes/utils'
 import {
   toAptosAddress,
+  toCosmosAddress,
   toEvmAddress,
-  toSeiAddress,
   toSolanaAddress,
   toSuiAddress,
 } from '../dist'
@@ -38,7 +38,7 @@ describe('utils', () => {
   it('sei address', () => {
     const privkey = utils.randomPrivateKey()
     const pubkey = getPublicKey(privkey, true)
-    const address = toSeiAddress(pubkey)
+    const address = toCosmosAddress(pubkey, 'sei')
     expect(address).is.not.empty
   })
 })

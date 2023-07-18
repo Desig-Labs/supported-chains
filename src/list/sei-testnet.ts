@@ -1,7 +1,7 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toSeiAddress } from '../utils'
+import { toCosmosAddress } from '../utils'
 
 export class SeiTestnet extends Chain {
   constructor() {
@@ -14,7 +14,7 @@ export class SeiTestnet extends Chain {
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sei-logo.png',
       rpcs: ['https://rpc.atlantic-2.seinetwork.io'],
       group: GroupChain.Sei,
-      getAddress: toSeiAddress,
+      getAddress: (pubkey) => toCosmosAddress(pubkey, 'sei'),
     })
   }
 }
