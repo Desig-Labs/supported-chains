@@ -9,4 +9,5 @@ export enum GroupChain {
   Solana = 'solana',
   Sui = 'sui',
   Zeta = 'zeta',
+  Sei = 'sei',
 }

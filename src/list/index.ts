@@ -24,6 +24,7 @@ import { PolygonZkEVMTestnet } from './polygon-zkevm-testnet'
 import { PolygonZkEVMMainNet } from './polygon-zkevm-mainnet'
 import { MoonBaseAlpha } from './moonbase'
 import { Moonbeam } from './moonbeam'
+import { SeiTestnet } from './sei-testnet'
 
 /**
  * All instances of Chain
@@ -47,12 +48,13 @@ export const chains: Record<string, Chain> = {
   '0x127': new HederaMainnet(),
   '0x128': new HederaTestnet(),
   '0x129': new HederaPreviewnet(),
-  '0xe704': new LineaTestnet(),
   '0xe708': new LineaMainnet(),
-  '0x5a2': new PolygonZkEVMTestnet(),
+  '0xe704': new LineaTestnet(),
   '0x44d': new PolygonZkEVMMainNet(),
-  '0x507': new MoonBaseAlpha(),
+  '0x5a2': new PolygonZkEVMTestnet(),
   '0x504': new Moonbeam(),
+  '0x507': new MoonBaseAlpha(),
+  '0xb66e1ec8b2d65': new SeiTestnet(),
 }
 
 /**
@@ -107,4 +109,5 @@ export {
   PolygonZkEVMMainNet,
   MoonBaseAlpha,
   Moonbeam,
+  SeiTestnet,
 }

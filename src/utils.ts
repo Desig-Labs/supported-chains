@@ -1,9 +1,11 @@
-import { Point } from '@noble/secp256k1'
-import { bytesToHex, concatBytes } from '@noble/hashes/utils'
-import { keccak_256, sha3_256 } from '@noble/hashes/sha3'
-import { blake2b } from '@noble/hashes/blake2b'
 import { encode } from 'bs58'
-
+import { bech32 } from 'bech32'
+import { Point } from '@noble/secp256k1'
+import { blake2b } from '@noble/hashes/blake2b'
+import { keccak_256, sha3_256 } from '@noble/hashes/sha3'
+import { sha256 as nobleSha256 } from '@noble/hashes/sha256'
+import { bytesToHex, concatBytes } from '@noble/hashes/utils'
+import { ripemd160 as nobleRipemd160 } from '@noble/hashes/ripemd160'
 /**
  * Convert a compressed pubkey to an evm address
  * @param pubkey Compressed pubkey
@@ -16,6 +18,29 @@ export const toEvmAddress = (pubkey: Uint8Array) => {
     const hash = bytesToHex(keccak_256(pub).slice(-20))
     const address = `0x${hash}`
     return address
+  } catch (er) {
+    return ''
+  }
+}
+
+/**
+ * Convert a compressed pubkey to an Cosmos address
+ * @param pubkey Compressed pubkey
+ * @param prefix Chain name
+ * @returns
+ */
+export const toCosmosAddress = (
+  pubkey: Uint8Array,
+  prefix = 'cosmos',
+): string => {
+  try {
+    const ripemd160 = nobleRipemd160.create()
+    const sha256 = nobleSha256.create()
+
+    const hashPubkey = sha256.update(pubkey).digest()
+    const ripemdPubkey = ripemd160.update(hashPubkey).digest()
+
+    return bech32.encode(prefix, bech32.toWords(ripemdPubkey), 0)
   } catch (er) {
     return ''
   }
