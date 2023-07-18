@@ -3,6 +3,7 @@ import { randomBytes } from '@noble/hashes/utils'
 import {
   toAptosAddress,
   toEvmAddress,
+  toSeiAddress,
   toSolanaAddress,
   toSuiAddress,
 } from '../dist'
@@ -31,6 +32,13 @@ describe('utils', () => {
   it('aptos address', () => {
     const pubkey = randomBytes(32)
     const address = toAptosAddress(pubkey)
+    expect(address).is.not.empty
+  })
+
+  it('sei address', () => {
+    const privkey = utils.randomPrivateKey()
+    const pubkey = getPublicKey(privkey, true)
+    const address = toSeiAddress(pubkey)
     expect(address).is.not.empty
   })
 })

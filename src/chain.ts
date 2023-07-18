@@ -28,7 +28,7 @@ export class Chain {
   public readonly icon: string
   public readonly logo: string
   public readonly rpcs: string[]
-  public readonly group: string
+  public readonly group: GroupChain
   public readonly getAddress: (pubkey: Uint8Array) => string
 
   constructor({

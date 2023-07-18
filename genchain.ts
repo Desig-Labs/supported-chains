@@ -27,6 +27,11 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Moonbase Alpha', id: 1287, curve: Curve.secp256k1 },
   { name: 'Moonbeam', id: 1284, curve: Curve.secp256k1 },
   {
+    name: 'Sei Testnet',
+    id: customizeChainId('Sei Testnet'),
+    curve: Curve.secp256k1,
+  },
+  {
     name: 'Solana Mainnet',
     id: customizeChainId('Solana Mainnet'),
     curve: Curve.ed25519,
