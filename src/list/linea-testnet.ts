@@ -13,8 +13,8 @@ export class LineaTestnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/linea-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/linea-logo.svg',
       rpcs: [
-        'wss://linea-goerli.infura.io/v3/21e28f1b90ea47368d9d7e2ba82e87e3',
-        'https://linea-goerli.infura.io/v3/21e28f1b90ea47368d9d7e2ba82e87e3',
+        'wss://linea-goerli.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
+        'https://linea-goerli.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
       ],
       group: GroupChain.Linea,
       getAddress: toEvmAddress,
