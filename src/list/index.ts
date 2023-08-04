@@ -26,7 +26,6 @@ import { MoonBaseAlpha } from './moonbase'
 import { Moonbeam } from './moonbeam'
 import { SeiTestnet } from './sei-testnet'
 import { ShardeumDapp } from './shardeum-dapp'
-import { ShardeumValidator } from './shardeum-validator'
 
 /**
  * All instances of Chain
@@ -38,7 +37,6 @@ export const chains: Record<string, Chain> = {
   '0x38': new BscMainnet(),
   '0x61': new BscTestnet(),
   '0x1f91': new ShardeumDapp(),
-  '0x1f92': new ShardeumValidator(),
   '0xbb6a83b4b049e': new SolanaMainnet(),
   '0x6f09c097f2c10': new SolanaTestnet(),
   '0xbdadbf327bc03': new SolanaDevnet(),
