@@ -8,7 +8,7 @@ export class ShardeumValidator extends Chain {
     super({
       name: 'Shardeum Sphinx Validator 1.X',
       alias: 'Shardeum Sphinx Validator 1.X',
-      chainId: '8082',
+      chainId: '0x1f92',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-logo.svg',

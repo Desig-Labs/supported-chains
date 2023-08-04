@@ -27,6 +27,8 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Polygon zkEVM Mainnet', id: 1101, curve: Curve.secp256k1 },
   { name: 'Moonbase Alpha', id: 1287, curve: Curve.secp256k1 },
   { name: 'Moonbeam', id: 1284, curve: Curve.secp256k1 },
+  { name: 'Shardeum Sphinx Validator 1.X', id: 8082, curve: Curve.secp256k1 },
+  { name: 'Shardeum Sphinx Dapp 1.X', id: 8081, curve: Curve.secp256k1 },
   {
     name: 'Sei Testnet',
     id: customizeChainId('Sei Testnet'),

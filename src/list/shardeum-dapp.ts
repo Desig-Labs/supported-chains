@@ -8,7 +8,7 @@ export class ShardeumDapp extends Chain {
     super({
       name: 'Shardeum Sphinx Dapp 1.X',
       alias: 'Shardeum Sphinx Dapp 1.X',
-      chainId: '8081',
+      chainId: '0x1f91',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-logo.svg',
