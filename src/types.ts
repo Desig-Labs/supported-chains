@@ -10,4 +10,5 @@ export enum GroupChain {
   Sui = 'sui',
   Zeta = 'zeta',
   Sei = 'sei',
+  Shardeum = 'shardeum',
 }
