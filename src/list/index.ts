@@ -26,6 +26,11 @@ import { MoonBaseAlpha } from './moonbase'
 import { Moonbeam } from './moonbeam'
 import { SeiTestnet } from './sei-testnet'
 import { ShardeumTestnet } from './shardeum-testnet'
+import { ArbitrumTestnet } from './arbitrum-testnet'
+import { ArbitrumMainnet } from './arbitrum-mainnet'
+import { TaikoGrimsvotn } from './taiko-grimsvotn'
+import { TaikoEldfell } from './taiko-eldfell'
+import { SeiMainnet } from './sei-mainnet'
 
 /**
  * All instances of Chain
@@ -37,6 +42,10 @@ export const chains: Record<string, Chain> = {
   '0x38': new BscMainnet(),
   '0x61': new BscTestnet(),
   '0x1f91': new ShardeumTestnet(),
+  '0x66eed': new ArbitrumTestnet(),
+  '0xa4b1': new ArbitrumMainnet(),
+  '0x28c5d': new TaikoGrimsvotn(),
+  '0x28c5e': new TaikoEldfell(),
   '0xbb6a83b4b049e': new SolanaMainnet(),
   '0x6f09c097f2c10': new SolanaTestnet(),
   '0xbdadbf327bc03': new SolanaDevnet(),
@@ -57,6 +66,7 @@ export const chains: Record<string, Chain> = {
   '0x504': new Moonbeam(),
   '0x507': new MoonBaseAlpha(),
   '0xb66e1ec8b2d65': new SeiTestnet(),
+  '0x24a5164fcc04': new SeiMainnet(),
 }
 
 /**
