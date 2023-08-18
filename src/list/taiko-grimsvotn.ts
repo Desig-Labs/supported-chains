@@ -12,7 +12,7 @@ export class TaikoGrimsvotn extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
-      rpcs: ['https://rpc.l3test.taiko.xyz'],
+      rpcs: ['wss://ws.test.taiko.xyz', 'https://rpc.test.taiko.xyz'],
       group: GroupChain.Taiko,
       getAddress: toEvmAddress,
     })
