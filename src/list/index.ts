@@ -30,6 +30,7 @@ import { ArbitrumTestnet } from './arbitrum-testnet'
 import { ArbitrumMainnet } from './arbitrum-mainnet'
 import { TaikoGrimsvotn } from './taiko-grimsvotn'
 import { TaikoEldfell } from './taiko-eldfell'
+import { SeiMainnet } from './sei-mainnet'
 
 /**
  * All instances of Chain
@@ -65,6 +66,7 @@ export const chains: Record<string, Chain> = {
   '0x504': new Moonbeam(),
   '0x507': new MoonBaseAlpha(),
   '0xb66e1ec8b2d65': new SeiTestnet(),
+  '0x24a5164fcc04': new SeiMainnet(),
 }
 
 /**
