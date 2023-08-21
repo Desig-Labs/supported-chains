@@ -15,6 +15,7 @@ export class AptosDevnet extends Chain {
       rpcs: ['https://fullnode.devnet.aptoslabs.com'],
       group: GroupChain.Aptos,
       getAddress: toAptosAddress,
+      isMainnet: false,
     })
   }
 }

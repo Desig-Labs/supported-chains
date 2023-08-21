@@ -15,6 +15,7 @@ export class SuiDevnet extends Chain {
       rpcs: ['https://fullnode.devnet.sui.io'],
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
+      isMainnet: false,
     })
   }
 }

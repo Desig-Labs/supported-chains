@@ -18,6 +18,7 @@ export class HederaTestnet extends Chain {
       ],
       group: GroupChain.Hedera,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

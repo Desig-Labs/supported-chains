@@ -18,6 +18,7 @@ export class ArbitrumMainnet extends Chain {
       ],
       group: GroupChain.Arbitrum,
       getAddress: toEvmAddress,
+      isMainnet: true,
     })
   }
 }

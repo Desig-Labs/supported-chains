@@ -15,6 +15,7 @@ export class SuiMainnet extends Chain {
       rpcs: ['https://rpc.mainnet.sui.io'],
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
+      isMainnet: true,
     })
   }
 }

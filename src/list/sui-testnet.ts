@@ -15,6 +15,7 @@ export class SuiTestnet extends Chain {
       rpcs: ['https://fullnode.testnet.sui.io'],
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
+      isMainnet: false,
     })
   }
 }

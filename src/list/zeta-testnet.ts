@@ -18,6 +18,7 @@ export class ZetaTestnet extends Chain {
       ],
       group: GroupChain.Zeta,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

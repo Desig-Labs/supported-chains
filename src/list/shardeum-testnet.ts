@@ -15,6 +15,7 @@ export class ShardeumTestnet extends Chain {
       rpcs: ['wss://dapps.shardeum.org', 'https://dapps.shardeum.org'],
       group: GroupChain.Shardeum,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

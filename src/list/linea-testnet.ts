@@ -18,6 +18,7 @@ export class LineaTestnet extends Chain {
       ],
       group: GroupChain.Linea,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

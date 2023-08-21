@@ -18,6 +18,7 @@ export class PolygonZkEVMTestnet extends Chain {
       ],
       group: GroupChain.Polygon_zkevm,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }
