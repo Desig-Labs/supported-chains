@@ -121,7 +121,11 @@ export {
   PolygonZkEVMMainNet,
   MoonBaseAlpha,
   Moonbeam,
+  SeiMainnet,
   SeiTestnet,
   ArbitrumMainnet,
   ArbitrumTestnet,
+  TaikoEldfell,
+  TaikoGrimsvotn,
+  ShardeumTestnet,
 }
