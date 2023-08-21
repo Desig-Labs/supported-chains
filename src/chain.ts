@@ -16,6 +16,7 @@ export type ChainParams = {
   logo?: string
   rpcs: string[]
   group: GroupChain
+  isMainnet: boolean
   getAddress: (pubkey: Uint8Array) => string
 }
 
@@ -30,6 +31,7 @@ export class Chain {
   public readonly rpcs: string[]
   public readonly group: GroupChain
   public readonly getAddress: (pubkey: Uint8Array) => string
+  public readonly isMainnet: boolean
 
   constructor({
     name,
@@ -42,6 +44,7 @@ export class Chain {
     rpcs,
     group,
     getAddress,
+    isMainnet,
   }: ChainParams) {
     this.name = name
     this.alias = alias || name
@@ -53,6 +56,7 @@ export class Chain {
     this.rpcs = rpcs
     this.group = group
     this.getAddress = getAddress
+    this.isMainnet = isMainnet
   }
 
   get rpc() {

@@ -15,6 +15,7 @@ export class TaikoGrimsvotn extends Chain {
       rpcs: ['wss://ws.test.taiko.xyz', 'https://rpc.test.taiko.xyz'],
       group: GroupChain.Taiko,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

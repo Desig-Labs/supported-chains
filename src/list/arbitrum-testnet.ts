@@ -15,6 +15,7 @@ export class ArbitrumTestnet extends Chain {
       rpcs: ['', 'https://goerli-rollup.arbitrum.io/rpc'],
       group: GroupChain.Arbitrum,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

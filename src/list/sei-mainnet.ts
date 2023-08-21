@@ -15,6 +15,7 @@ export class SeiMainnet extends Chain {
       rpcs: ['https://sei-rpc.polkachu.com/'],
       group: GroupChain.Sei,
       getAddress: (pubkey) => toCosmosAddress(pubkey, 'sei'),
+      isMainnet: true,
     })
   }
 }

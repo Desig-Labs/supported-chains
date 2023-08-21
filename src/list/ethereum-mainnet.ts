@@ -18,6 +18,7 @@ export class EthereumMainnet extends Chain {
       ],
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
+      isMainnet: true,
     })
   }
 }

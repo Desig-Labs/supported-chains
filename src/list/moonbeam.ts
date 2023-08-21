@@ -18,6 +18,7 @@ export class Moonbeam extends Chain {
       ],
       group: GroupChain.Moonbeam,
       getAddress: toEvmAddress,
+      isMainnet: true,
     })
   }
 }

@@ -15,6 +15,7 @@ export class TaikoEldfell extends Chain {
       rpcs: ['', 'https://rpc.l3test.taiko.xyz'],
       group: GroupChain.Taiko,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

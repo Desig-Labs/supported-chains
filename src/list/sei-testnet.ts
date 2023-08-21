@@ -15,6 +15,7 @@ export class SeiTestnet extends Chain {
       rpcs: ['https://rpc.atlantic-2.seinetwork.io'],
       group: GroupChain.Sei,
       getAddress: (pubkey) => toCosmosAddress(pubkey, 'sei'),
+      isMainnet: false,
     })
   }
 }

@@ -15,6 +15,7 @@ export class AptosTestnet extends Chain {
       rpcs: ['https://fullnode.testnet.aptoslabs.com'],
       group: GroupChain.Aptos,
       getAddress: toAptosAddress,
+      isMainnet: false,
     })
   }
 }

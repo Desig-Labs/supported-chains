@@ -18,6 +18,7 @@ export class SolanaMainnet extends Chain {
       ],
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
+      isMainnet: true,
     })
   }
 }

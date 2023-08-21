@@ -19,6 +19,7 @@ export class BscTestnet extends Chain {
       ],
       group: GroupChain.Binance,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

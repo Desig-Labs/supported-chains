@@ -19,6 +19,7 @@ export class BscMainnet extends Chain {
       ],
       group: GroupChain.Binance,
       getAddress: toEvmAddress,
+      isMainnet: true,
     })
   }
 }

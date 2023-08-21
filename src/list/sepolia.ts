@@ -18,6 +18,7 @@ export class Sepolia extends Chain {
       ],
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
+      isMainnet: false,
     })
   }
 }

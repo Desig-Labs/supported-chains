@@ -15,6 +15,7 @@ export class SolanaDevnet extends Chain {
       rpcs: ['https://api.devnet.solana.com'],
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
+      isMainnet: false,
     })
   }
 }
