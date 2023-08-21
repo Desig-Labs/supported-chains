@@ -122,4 +122,6 @@ export {
   MoonBaseAlpha,
   Moonbeam,
   SeiTestnet,
+  ArbitrumMainnet,
+  ArbitrumTestnet,
 }
