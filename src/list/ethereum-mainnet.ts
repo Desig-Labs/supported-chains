@@ -11,7 +11,7 @@ export class EthereumMainnet extends Chain {
       chainId: '0x1',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
-      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.svg',
       rpcs: [
         'wss://mainnet.infura.io/ws/v3/93597110afce4130a8f962c0abf2f73c',
         'https://mainnet.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
