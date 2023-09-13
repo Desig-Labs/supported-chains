@@ -31,6 +31,8 @@ import { ArbitrumMainnet } from './arbitrum-mainnet'
 import { TaikoGrimsvotn } from './taiko-grimsvotn'
 import { TaikoEldfell } from './taiko-eldfell'
 import { SeiMainnet } from './sei-mainnet'
+import { BaseMainnet } from './base-mainnet'
+import { BaseTestnet } from './base-testnet'
 
 /**
  * All instances of Chain
@@ -67,6 +69,8 @@ export const chains: Record<string, Chain> = {
   '0x507': new MoonBaseAlpha(),
   '0x24a5164fcc04': new SeiMainnet(),
   '0xb66e1ec8b2d65': new SeiTestnet(),
+  '0x2105': new BaseMainnet(),
+  '0x14a33': new BaseTestnet(),
 }
 
 /**
@@ -128,4 +132,6 @@ export {
   TaikoEldfell,
   TaikoGrimsvotn,
   ShardeumTestnet,
+  BaseMainnet,
+  BaseTestnet,
 }
