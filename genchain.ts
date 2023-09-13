@@ -32,6 +32,8 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Arbitrum Testnet', id: 421613, curve: Curve.secp256k1 },
   { name: 'Taiko Grimsvotn L2', id: 167005, curve: Curve.secp256k1 },
   { name: 'Taiko Eldfell L3', id: 167006, curve: Curve.secp256k1 },
+  { name: 'Base Mainnet', id: 8453, curve: Curve.secp256k1 },
+  { name: 'Base Goerli', id: 84531, curve: Curve.secp256k1 },
   {
     name: 'Sei Mainnet',
     id: customizeChainId('Sei Mainnet'),
