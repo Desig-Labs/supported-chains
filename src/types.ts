@@ -13,4 +13,5 @@ export enum GroupChain {
   Shardeum = 'shardeum',
   Arbitrum = 'arbitrum',
   Taiko = 'taiko',
+  Base = 'base',
 }
