@@ -3,11 +3,11 @@ import { Curve } from '../curve'
 import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
-export class Mumbai extends Chain {
+export class PolygonMumbai extends Chain {
   constructor() {
     super({
-      name: 'Mumbai',
-      alias: 'Mumbai',
+      name: 'Polygon Mumbai',
+      alias: 'Polygon Mumbai',
       chainId: '0x13881',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/polygon-pos-icon.svg',
