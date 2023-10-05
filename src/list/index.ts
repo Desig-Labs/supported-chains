@@ -20,6 +20,8 @@ import { HederaPreviewnet } from './hedera-previewnet'
 import { HederaMainnet } from './hedera-mainnet'
 import { LineaTestnet } from './linea-testnet'
 import { LineaMainnet } from './linea-mainnet'
+import { PolygonMainNet } from './polygon-mainnet'
+import { PolygonMumbai } from './polygon-mumbai'
 import { PolygonZkEVMTestnet } from './polygon-zkevm-testnet'
 import { PolygonZkEVMMainNet } from './polygon-zkevm-mainnet'
 import { MoonBaseAlpha } from './moonbase'
@@ -63,6 +65,8 @@ export const chains: Record<string, Chain> = {
   '0x129': new HederaPreviewnet(),
   '0xe708': new LineaMainnet(),
   '0xe704': new LineaTestnet(),
+  '0x89': new PolygonMainNet(),
+  '0x13881': new PolygonMumbai(),
   '0x44d': new PolygonZkEVMMainNet(),
   '0x5a2': new PolygonZkEVMTestnet(),
   '0x504': new Moonbeam(),
@@ -121,6 +125,8 @@ export {
   HederaTestnet,
   LineaTestnet,
   LineaMainnet,
+  PolygonMainNet,
+  PolygonMumbai,
   PolygonZkEVMTestnet,
   PolygonZkEVMMainNet,
   MoonBaseAlpha,
