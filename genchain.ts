@@ -23,6 +23,8 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Hedera Previewnet', id: 297, curve: Curve.secp256k1 },
   { name: 'Linea Testnet', id: 59140, curve: Curve.secp256k1 },
   { name: 'Linea Mainnet', id: 59144, curve: Curve.secp256k1 },
+  { name: 'Polygon Mainnet', id: 137, curve: Curve.secp256k1 },
+  { name: 'Polygon Mumbai', id: 80001, curve: Curve.secp256k1 },
   { name: 'Polygon zkEVM Testnet', id: 1442, curve: Curve.secp256k1 },
   { name: 'Polygon zkEVM Mainnet', id: 1101, curve: Curve.secp256k1 },
   { name: 'Moonbase Alpha', id: 1287, curve: Curve.secp256k1 },
