@@ -35,6 +35,8 @@ import { TaikoEldfell } from './taiko-eldfell'
 import { SeiMainnet } from './sei-mainnet'
 import { BaseMainnet } from './base-mainnet'
 import { BaseTestnet } from './base-testnet'
+import { TomoMainnet } from './tomo-mainnet'
+import { TomoTestnet } from './tomo-testnet'
 
 /**
  * All instances of Chain
@@ -75,6 +77,8 @@ export const chains: Record<string, Chain> = {
   '0xb66e1ec8b2d65': new SeiTestnet(),
   '0x2105': new BaseMainnet(),
   '0x14a33': new BaseTestnet(),
+  '0x58': new TomoMainnet(),
+  '0x59': new TomoTestnet(),
 }
 
 /**
@@ -140,4 +144,6 @@ export {
   ShardeumTestnet,
   BaseMainnet,
   BaseTestnet,
+  TomoMainnet,
+  TomoTestnet,
 }
