@@ -38,7 +38,7 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Base Goerli', id: 84531, curve: Curve.secp256k1 },
   { name: 'TomoChain Mainnet', id: 88, curve: Curve.secp256k1 },
   { name: 'TomoChain Testnet', id: 89, curve: Curve.secp256k1 },
-  { name: 'Avalanche C-Chain', id: 43114, curve: Curve.secp256k1 },
+  { name: 'Avalanche Mainnet', id: 43114, curve: Curve.secp256k1 },
   { name: 'Avalanche Fuji', id: 43113, curve: Curve.secp256k1 },
   {
     name: 'Sei Mainnet',

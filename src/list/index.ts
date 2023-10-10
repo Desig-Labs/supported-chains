@@ -37,7 +37,7 @@ import { BaseMainnet } from './base-mainnet'
 import { BaseTestnet } from './base-testnet'
 import { TomoMainnet } from './tomo-mainnet'
 import { TomoTestnet } from './tomo-testnet'
-import { AvalancheCChain } from './avalanche-c-chain'
+import { AvalancheMainnet } from './avalanche-mainnet'
 import { AvalancheFuji } from './avalanche-fuji'
 
 /**
@@ -81,7 +81,7 @@ export const chains: Record<string, Chain> = {
   '0x14a33': new BaseTestnet(),
   '0x58': new TomoMainnet(),
   '0x59': new TomoTestnet(),
-  '0xa86a': new AvalancheCChain(),
+  '0xa86a': new AvalancheMainnet(),
   '0xa869': new AvalancheFuji(),
 }
 
@@ -150,6 +150,6 @@ export {
   BaseTestnet,
   TomoMainnet,
   TomoTestnet,
-  AvalancheCChain,
+  AvalancheMainnet,
   AvalancheFuji,
 }
