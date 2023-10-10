@@ -16,4 +16,5 @@ export enum GroupChain {
   Taiko = 'taiko',
   Base = 'base',
   Tomo = 'tomo',
+  Avalanche_c_chain = 'avalanche_c_chain',
 }
