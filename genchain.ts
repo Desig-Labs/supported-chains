@@ -95,6 +95,11 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
     id: customizeChainId('Aptos Devnet'),
     curve: Curve.ed25519,
   },
+  {
+    name: 'Movement Devnet',
+    id: customizeChainId('Movement Devnet'),
+    curve: Curve.ed25519,
+  },
 ]
 
 rimrafSync('./index.md')
