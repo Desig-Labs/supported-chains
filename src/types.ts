@@ -15,7 +15,7 @@ export enum GroupChain {
   Arbitrum = 'arbitrum',
   Taiko = 'taiko',
   Base = 'base',
-  Tomo = 'tomo',
+  Viction = 'viction',
   Avalanche = 'avalanche',
   Movement = 'movement',
 }

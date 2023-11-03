@@ -13,7 +13,7 @@ export class TomoMainnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/tomo-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/tomo-logo.svg',
       rpcs: ['wss://ws.tomochain.com', 'https://rpc.tomochain.com'],
-      group: GroupChain.Tomo,
+      group: GroupChain.Viction,
       getAddress: toEvmAddress,
       isMainnet: true,
     })
