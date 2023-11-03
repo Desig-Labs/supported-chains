@@ -16,7 +16,7 @@ export class TomoTestnet extends Chain {
         'wss://ws.testnet.tomochain.com',
         'https://rpc.testnet.tomochain.com',
       ],
-      group: GroupChain.Tomo,
+      group: GroupChain.Viction,
       getAddress: toEvmAddress,
       isMainnet: false,
     })
