@@ -1,6 +1,6 @@
 {
   "name": "@desig/supported-chains",
-  "version": "1.0.42",
+  "version": "1.0.44",
   "description": "The list of supported chains on Desig",
   "homepage": "https://chainlist.desig.io/",
   "main": "dist/index.js",

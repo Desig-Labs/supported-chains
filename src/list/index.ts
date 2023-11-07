@@ -35,8 +35,8 @@ import { TaikoEldfell } from './taiko-eldfell'
 import { SeiMainnet } from './sei-mainnet'
 import { BaseMainnet } from './base-mainnet'
 import { BaseTestnet } from './base-testnet'
-import { TomoMainnet } from './tomo-mainnet'
-import { TomoTestnet } from './tomo-testnet'
+import { VictionMainnet } from './viction-mainnet'
+import { VictionTestnet } from './viction-testnet'
 import { AvalancheMainnet } from './avalanche-mainnet'
 import { AvalancheFuji } from './avalanche-fuji'
 import { MovementTestnet } from './movement-testnet'
@@ -80,8 +80,8 @@ export const chains: Record<string, Chain> = {
   '0xb66e1ec8b2d65': new SeiTestnet(),
   '0x2105': new BaseMainnet(),
   '0x14a33': new BaseTestnet(),
-  '0x58': new TomoMainnet(),
-  '0x59': new TomoTestnet(),
+  '0x58': new VictionMainnet(),
+  '0x59': new VictionTestnet(),
   '0xa86a': new AvalancheMainnet(),
   '0xa869': new AvalancheFuji(),
   '0xd990377fe4ecf': new MovementTestnet(),
@@ -150,8 +150,8 @@ export {
   ShardeumTestnet,
   BaseMainnet,
   BaseTestnet,
-  TomoMainnet,
-  TomoTestnet,
+  VictionMainnet,
+  VictionTestnet,
   AvalancheMainnet,
   AvalancheFuji,
   MovementTestnet,

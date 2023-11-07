@@ -3,17 +3,17 @@ import { Curve } from '../curve'
 import { GroupChain } from '../types'
 import { toEvmAddress } from '../utils'
 
-export class TomoMainnet extends Chain {
+export class VictionMainnet extends Chain {
   constructor() {
     super({
       name: 'Viction Mainnet',
       alias: 'Viction',
       chainId: '0x58',
       curve: Curve.secp256k1,
-      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/tomo-icon.svg',
-      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/tomo-logo.svg',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/viction-icon.svg',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/viction-logo.svg',
       rpcs: ['wss://ws.tomochain.com', 'https://rpc.tomochain.com'],
-      group: GroupChain.Tomo,
+      group: GroupChain.Viction,
       getAddress: toEvmAddress,
       isMainnet: true,
     })
