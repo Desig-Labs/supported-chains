@@ -30,8 +30,7 @@ import { SeiTestnet } from './sei-testnet'
 import { ShardeumTestnet } from './shardeum-testnet'
 import { ArbitrumTestnet } from './arbitrum-testnet'
 import { ArbitrumMainnet } from './arbitrum-mainnet'
-import { TaikoGrimsvotn } from './taiko-grimsvotn'
-import { TaikoEldfell } from './taiko-eldfell'
+import { TaikoJolnir } from './taiko-jolnir'
 import { SeiMainnet } from './sei-mainnet'
 import { BaseMainnet } from './base-mainnet'
 import { BaseTestnet } from './base-testnet'
@@ -53,8 +52,7 @@ export const chains: Record<string, Chain> = {
   '0x1f91': new ShardeumTestnet(),
   '0xa4b1': new ArbitrumMainnet(),
   '0x66eed': new ArbitrumTestnet(),
-  '0x28c5d': new TaikoGrimsvotn(),
-  '0x28c5e': new TaikoEldfell(),
+  '0x28c5f': new TaikoJolnir(),
   '0xbb6a83b4b049e': new SolanaMainnet(),
   '0x6f09c097f2c10': new SolanaTestnet(),
   '0xbdadbf327bc03': new SolanaDevnet(),
@@ -145,8 +143,7 @@ export {
   SeiTestnet,
   ArbitrumMainnet,
   ArbitrumTestnet,
-  TaikoEldfell,
-  TaikoGrimsvotn,
+  TaikoJolnir,
   ShardeumTestnet,
   BaseMainnet,
   BaseTestnet,
