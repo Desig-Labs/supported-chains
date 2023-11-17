@@ -2,7 +2,6 @@ export enum GroupChain {
   Aptos = 'aptos',
   Binance = 'binance',
   Ethereum = 'ethereum',
-  Hedera = 'hedera',
   Linea = 'linea',
   Moonbeam = 'moonbeam',
   Polygon_pos = 'polygon_pos',
