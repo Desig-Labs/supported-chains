@@ -16,6 +16,10 @@ export class TaikoJolnir extends Chain {
       group: GroupChain.Taiko,
       getAddress: toEvmAddress,
       isMainnet: false,
+      endpoint: {
+        wss: 'wss://ws.jolnir.taiko.xyz',
+        https: 'https://rpc.jolnir.taiko.xyz',
+      },
     })
   }
 }

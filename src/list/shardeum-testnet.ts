@@ -16,6 +16,10 @@ export class ShardeumTestnet extends Chain {
       group: GroupChain.Shardeum,
       getAddress: toEvmAddress,
       isMainnet: false,
+      endpoint: {
+        wss: 'wss://dapps.shardeum.org',
+        https: 'https://dapps.shardeum.org',
+      },
     })
   }
 }
