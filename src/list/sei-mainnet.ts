@@ -6,7 +6,7 @@ import { toCosmosAddress } from '../utils'
 export class SeiMainnet extends Chain {
   constructor() {
     super({
-      name: 'Sei Mainnet',
+      name: 'Sei',
       alias: 'Sei',
       chainId: '0x24a5164fcc04',
       curve: Curve.secp256k1,
