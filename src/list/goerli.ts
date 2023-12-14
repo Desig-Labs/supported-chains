@@ -13,12 +13,17 @@ export class Goerli extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
       rpcs: [
-        'wss://goerli.infura.io/ws/v3/93597110afce4130a8f962c0abf2f73c',
-        'https://goerli.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
+        'wss://rpc.ankr.com/eth_goerli/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        'https://rpc.ankr.com/eth_goerli/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
       ],
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
       isMainnet: false,
+      endpoint: {
+        wss: 'wss://rpc.ankr.com/eth_goerli/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        https:
+          'https://rpc.ankr.com/eth_goerli/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+      },
     })
   }
 }

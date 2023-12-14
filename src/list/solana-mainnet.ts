@@ -13,12 +13,16 @@ export class SolanaMainnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-logo.svg',
       rpcs: [
-        'https://radial-billowing-gas.solana-mainnet.quiknode.pro/9d19e80c758eb5bd7b86d912e9345aa153db6a8f/',
-        'https://api.mainnet-beta.solana.com',
+        'https://rpc.ankr.com/solana/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
       ],
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
       isMainnet: true,
+      endpoint: {
+        wss: 'wss://rpc.ankr.com/solana/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        https:
+          'https://rpc.ankr.com/solana/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+      },
     })
   }
 }

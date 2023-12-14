@@ -13,13 +13,17 @@ export class BscMainnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: [
-        'wss://light-newest-vineyard.bsc.quiknode.pro/3271e15ee3c81409ad5b4a5de629706a5af9ad6e',
-        'https://light-newest-vineyard.bsc.quiknode.pro/3271e15ee3c81409ad5b4a5de629706a5af9ad6e/',
-        'https://bsc-dataseed.binance.org',
+        'wss://rpc.ankr.com/bsc/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        'https://rpc.ankr.com/bsc/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
       ],
       group: GroupChain.Binance,
       getAddress: toEvmAddress,
       isMainnet: true,
+      endpoint: {
+        wss: 'wss://rpc.ankr.com/bsc/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        https:
+          'https://rpc.ankr.com/bsc/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+      },
     })
   }
 }

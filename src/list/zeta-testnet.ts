@@ -19,6 +19,11 @@ export class ZetaTestnet extends Chain {
       group: GroupChain.Zeta,
       getAddress: toEvmAddress,
       isMainnet: false,
+      endpoint: {
+        wss: 'wss://rpc.ankr.com/zetachain_evm_athens_testnet/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        https:
+          'https://rpc.ankr.com/zetachain_evm_athens_testnet/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+      },
     })
   }
 }

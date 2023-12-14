@@ -13,13 +13,17 @@ export class BscTestnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
       rpcs: [
-        'wss://hardworking-multi-dawn.bsc-testnet.quiknode.pro/2b6e0a376b43cc4dd95f014ba53f22e5366408c8',
-        'https://hardworking-multi-dawn.bsc-testnet.quiknode.pro/2b6e0a376b43cc4dd95f014ba53f22e5366408c8/',
-        'https://data-seed-prebsc-1-s1.binance.org:8545',
+        'wss://rpc.ankr.com/bsc_testnet_chapel/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        'https://rpc.ankr.com/bsc_testnet_chapel/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
       ],
       group: GroupChain.Binance,
       getAddress: toEvmAddress,
       isMainnet: false,
+      endpoint: {
+        wss: 'wss://rpc.ankr.com/bsc_testnet_chapel/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        https:
+          'https://rpc.ankr.com/bsc_testnet_chapel/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+      },
     })
   }
 }

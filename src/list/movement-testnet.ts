@@ -16,6 +16,9 @@ export class MovementTestnet extends Chain {
       group: GroupChain.Movement,
       getAddress: toAptosAddress,
       isMainnet: false,
+      endpoint: {
+        https: 'https://seed-node1.movementlabs.xyz',
+      },
     })
   }
 }
