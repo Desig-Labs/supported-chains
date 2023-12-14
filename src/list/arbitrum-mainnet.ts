@@ -6,7 +6,7 @@ import { toEvmAddress } from '../utils'
 export class ArbitrumMainnet extends Chain {
   constructor() {
     super({
-      name: 'Arbitrum Mainnet',
+      name: 'Arbitrum',
       alias: 'Arbitrum',
       chainId: '0xa4b1',
       curve: Curve.secp256k1,
