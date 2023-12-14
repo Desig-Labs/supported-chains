@@ -16,6 +16,9 @@ export class SolanaTestnet extends Chain {
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
       isMainnet: false,
+      endpoint: {
+        https: 'https://api.testnet.solana.com',
+      },
     })
   }
 }

@@ -19,6 +19,11 @@ export class LineaTestnet extends Chain {
       group: GroupChain.Linea,
       getAddress: toEvmAddress,
       isMainnet: false,
+      endpoint: {
+        wss: 'wss://linea-goerli.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
+        https:
+          'https://linea-goerli.infura.io/v3/93597110afce4130a8f962c0abf2f73c',
+      },
     })
   }
 }

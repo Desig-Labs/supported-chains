@@ -19,6 +19,10 @@ export class ZetaMainnet extends Chain {
       group: GroupChain.Zeta,
       getAddress: toEvmAddress,
       isMainnet: true,
+      endpoint: {
+        wss: 'wss://api-lb.athens2.zetachain.com:26657/websocket',
+        https: 'https://api.mainnet.zetachain.com/evm',
+      },
     })
   }
 }

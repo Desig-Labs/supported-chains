@@ -19,6 +19,10 @@ export class VictionTestnet extends Chain {
       group: GroupChain.Viction,
       getAddress: toEvmAddress,
       isMainnet: false,
+      endpoint: {
+        wss: 'wss://ws.testnet.tomochain.com',
+        https: 'https://rpc.testnet.tomochain.com',
+      },
     })
   }
 }
