@@ -17,4 +17,5 @@ export enum GroupChain {
   Viction = 'viction',
   Avalanche = 'avalanche',
   Movement = 'movement',
+  X1 = 'x1',
 }
