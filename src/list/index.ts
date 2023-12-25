@@ -36,6 +36,7 @@ import { VictionTestnet } from './viction-testnet'
 import { AvalancheMainnet } from './avalanche-mainnet'
 import { AvalancheFuji } from './avalanche-fuji'
 import { MovementTestnet } from './movement-testnet'
+import { X1Testnet } from './x1-testnet'
 
 /**
  * All instances of Chain
@@ -77,6 +78,7 @@ export const chains: Record<string, Chain> = {
   '0xa86a': new AvalancheMainnet(),
   '0xa869': new AvalancheFuji(),
   '0xd990377fe4ecf': new MovementTestnet(),
+  '0xc3': new X1Testnet(),
 }
 
 /**
@@ -143,4 +145,5 @@ export {
   AvalancheMainnet,
   AvalancheFuji,
   MovementTestnet,
+  X1Testnet,
 }
