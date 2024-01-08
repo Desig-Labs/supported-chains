@@ -8,17 +8,17 @@ export class ShardeumTestnet extends Chain {
     super({
       name: 'Shardeum Testnet',
       alias: 'Shardeum Testnet',
-      chainId: '0x1f91',
+      chainId: '0x1f92',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-logo.svg',
-      rpcs: ['wss://dapps.shardeum.org', 'https://dapps.shardeum.org'],
+      rpcs: ['wss://sphinx.shardeum.org', 'https://sphinx.shardeum.org'],
       group: GroupChain.Shardeum,
       getAddress: toEvmAddress,
       isMainnet: false,
       endpoint: {
-        wss: 'wss://dapps.shardeum.org',
-        https: 'https://dapps.shardeum.org',
+        wss: 'wss://sphinx.shardeum.org',
+        https: 'https://sphinx.shardeum.org',
       },
     })
   }
