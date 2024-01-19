@@ -37,6 +37,9 @@ import { AvalancheMainnet } from './avalanche-mainnet'
 import { AvalancheFuji } from './avalanche-fuji'
 import { MovementTestnet } from './movement-testnet'
 import { X1Testnet } from './x1-testnet'
+import { InjectiveMainnet } from './injective-mainnet'
+import { InjectiveTestnet } from './injective-testnet'
+import { BlastTestnet } from './blast-testnet'
 
 /**
  * All instances of Chain
@@ -79,6 +82,9 @@ export const chains: Record<string, Chain> = {
   '0xa869': new AvalancheFuji(),
   '0xd990377fe4ecf': new MovementTestnet(),
   '0xc3': new X1Testnet(),
+  '0x63f93d0f947be': new InjectiveMainnet(),
+  '0xd49780436dc91': new InjectiveTestnet(),
+  '0xa0c71fd': new BlastTestnet(),
 }
 
 /**
@@ -146,4 +152,7 @@ export {
   AvalancheFuji,
   MovementTestnet,
   X1Testnet,
+  InjectiveMainnet,
+  InjectiveTestnet,
+  BlastTestnet,
 }
