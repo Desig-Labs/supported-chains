@@ -13,16 +13,16 @@ export class BaseTestnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/base-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/base-logo.svg',
       rpcs: [
-        'wss://rpc.ankr.com/base_goerli/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
-        'https://rpc.ankr.com/base_goerli/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        'wss://rpc.ankr.com/base_goerli/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
+        'https://rpc.ankr.com/base_goerli/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
       ],
       group: GroupChain.Base,
       getAddress: toEvmAddress,
       isMainnet: false,
       endpoint: {
-        wss: 'wss://rpc.ankr.com/base_goerli/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        wss: 'wss://rpc.ankr.com/base_goerli/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
         https:
-          'https://rpc.ankr.com/base_goerli/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+          'https://rpc.ankr.com/base_goerli/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
       },
     })
   }

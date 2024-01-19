@@ -13,16 +13,16 @@ export class ZetaTestnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/zeta-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/zeta-logo.svg',
       rpcs: [
-        'wss://rpc.ankr.com/zetachain_evm_athens_testnet/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
-        'https://rpc.ankr.com/zetachain_evm_athens_testnet/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        'wss://rpc.ankr.com/zetachain_evm_athens_testnet/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
+        'https://rpc.ankr.com/zetachain_evm_athens_testnet/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
       ],
       group: GroupChain.Zeta,
       getAddress: toEvmAddress,
       isMainnet: false,
       endpoint: {
-        wss: 'wss://rpc.ankr.com/zetachain_evm_athens_testnet/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        wss: 'wss://rpc.ankr.com/zetachain_evm_athens_testnet/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
         https:
-          'https://rpc.ankr.com/zetachain_evm_athens_testnet/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+          'https://rpc.ankr.com/zetachain_evm_athens_testnet/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
       },
     })
   }

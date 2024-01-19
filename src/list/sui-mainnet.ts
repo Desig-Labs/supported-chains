@@ -13,15 +13,15 @@ export class SuiMainnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-logo.svg',
       rpcs: [
-        'https://rpc.ankr.com/sui/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        'https://rpc.ankr.com/sui/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
       ],
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
       isMainnet: true,
       endpoint: {
-        wss: 'wss://rpc.ankr.com/sui/ws/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+        wss: 'wss://rpc.ankr.com/sui/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
         https:
-          'https://rpc.ankr.com/sui/6fd209c7de745965c5b2092cb14245501fb6d4bd12a11db785dda62ab94cb2a4',
+          'https://rpc.ankr.com/sui/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
       },
     })
   }
