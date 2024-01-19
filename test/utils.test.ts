@@ -41,4 +41,11 @@ describe('utils', () => {
     const address = toCosmosAddress(pubkey, 'sei')
     expect(address).is.not.empty
   })
+
+  it('injective address', () => {
+    const privkey = utils.randomPrivateKey()
+    const pubkey = getPublicKey(privkey, true)
+    const address = toCosmosAddress(pubkey, 'inj')
+    expect(address).is.not.empty
+  })
 })
