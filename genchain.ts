@@ -37,6 +37,7 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Avalanche Mainnet', id: 43114, curve: Curve.secp256k1 },
   { name: 'Avalanche Fuji', id: 43113, curve: Curve.secp256k1 },
   { name: 'X1 Testnet', id: 195, curve: Curve.secp256k1 },
+  { name: 'Bera Testnet', id: 80085, curve: Curve.secp256k1 },
   {
     name: 'Injective Mainnet',
     id: customizeChainId('injective-1'),
