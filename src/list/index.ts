@@ -40,6 +40,7 @@ import { X1Testnet } from './x1-testnet'
 import { InjectiveMainnet } from './injective-mainnet'
 import { InjectiveTestnet } from './injective-testnet'
 import { BlastTestnet } from './blast-testnet'
+import { BeraTestnet } from './bera-testnet'
 
 /**
  * All instances of Chain
@@ -85,6 +86,7 @@ export const chains: Record<string, Chain> = {
   '0x63f93d0f947be': new InjectiveMainnet(),
   '0xd49780436dc91': new InjectiveTestnet(),
   '0xa0c71fd': new BlastTestnet(),
+  '0x138d5': new BeraTestnet(),
 }
 
 /**
@@ -155,4 +157,5 @@ export {
   InjectiveMainnet,
   InjectiveTestnet,
   BlastTestnet,
+  BeraTestnet,
 }
