@@ -21,4 +21,5 @@ export enum GroupChain {
   Injective = 'Injective',
   Blast = 'Blast',
   Bera = 'Bera',
+  Ancient8 = 'ancient8',
 }
