@@ -18,8 +18,8 @@ export enum GroupChain {
   Avalanche = 'avalanche',
   Movement = 'movement',
   X1 = 'x1',
-  Injective = 'Injective',
-  Blast = 'Blast',
-  Bera = 'Bera',
+  Injective = 'injective',
+  Blast = 'blast',
+  Bera = 'bera',
   Ancient8 = 'ancient8',
 }
