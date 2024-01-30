@@ -12,12 +12,13 @@ export class Ancient8Mainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/a8-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/a8-logo.svg',
-      rpcs: ['https://rpc.ancient8.gg'],
+      rpcs: ['', 'https://rpc.ancient8.gg'],
       group: GroupChain.Ancient8,
       getAddress: toEvmAddress,
       isMainnet: true,
       endpoint: {
         https: 'https://scan.ancient8.gg',
+        wss: '',
       },
     })
   }
