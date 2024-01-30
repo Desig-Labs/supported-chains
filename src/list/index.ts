@@ -53,7 +53,7 @@ export const chains: Record<string, Chain> = {
   '0xaa36a7': new Sepolia(),
   '0x38': new BscMainnet(),
   '0x61': new BscTestnet(),
-  '0x1f91': new ShardeumTestnet(),
+  '0x1f92': new ShardeumTestnet(),
   '0xa4b1': new ArbitrumMainnet(),
   '0x66eed': new ArbitrumTestnet(),
   '0x28c5f': new TaikoJolnir(),
