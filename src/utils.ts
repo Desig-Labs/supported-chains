@@ -6,6 +6,28 @@ import { keccak_256, sha3_256 } from '@noble/hashes/sha3'
 import { sha256 as nobleSha256 } from '@noble/hashes/sha256'
 import { bytesToHex, concatBytes } from '@noble/hashes/utils'
 import { ripemd160 as nobleRipemd160 } from '@noble/hashes/ripemd160'
+
+const SECP256K1_PUBLIC_KEY_SIZE = 33
+const ED25519_PUBLIC_KEY_SIZE = 32
+
+const exactEd25519Pubkey = (pubkey: Uint8Array) => {
+  if (pubkey.length !== ED25519_PUBLIC_KEY_SIZE) {
+    throw new Error(
+      `Invalid public key input. Expected ${ED25519_PUBLIC_KEY_SIZE} bytes, got ${pubkey.length}`,
+    )
+  }
+  return true
+}
+
+const exactSecp256k1Pubkey = (pubkey: Uint8Array) => {
+  if (pubkey.length !== SECP256K1_PUBLIC_KEY_SIZE) {
+    throw new Error(
+      `Invalid public key input. Expected ${SECP256K1_PUBLIC_KEY_SIZE} bytes, got ${pubkey.length}`,
+    )
+  }
+  return true
+}
+
 /**
  * Convert a compressed pubkey to an evm address
  * @param pubkey Compressed pubkey
@@ -13,6 +35,7 @@ import { ripemd160 as nobleRipemd160 } from '@noble/hashes/ripemd160'
  */
 export const toEvmAddress = (pubkey: Uint8Array) => {
   try {
+    exactSecp256k1Pubkey(pubkey)
     const point = Point.fromHex(pubkey)
     const pub = point.toRawBytes().subarray(1)
     const hash = bytesToHex(keccak_256(pub).slice(-20))
@@ -34,6 +57,7 @@ export const toCosmosAddress = (
   prefix = 'cosmos',
 ): string => {
   try {
+    exactSecp256k1Pubkey(pubkey)
     const ripemd160 = nobleRipemd160.create()
     const sha256 = nobleSha256.create()
 
@@ -53,6 +77,7 @@ export const toCosmosAddress = (
  */
 export const toSolanaAddress = (pubkey: Uint8Array) => {
   try {
+    exactEd25519Pubkey(pubkey)
     return encode(pubkey)
   } catch (er) {
     return ''
@@ -66,6 +91,7 @@ export const toSolanaAddress = (pubkey: Uint8Array) => {
  */
 export const toSuiAddress = (pubkey: Uint8Array) => {
   try {
+    exactEd25519Pubkey(pubkey)
     const seed = concatBytes(new Uint8Array([0]), pubkey)
     const hash = bytesToHex(blake2b(seed, { dkLen: 32 }))
       .slice(0, 64)
@@ -83,6 +109,7 @@ export const toSuiAddress = (pubkey: Uint8Array) => {
  */
 export const toAptosAddress = (pubkey: Uint8Array) => {
   try {
+    exactEd25519Pubkey(pubkey)
     const buf = new Uint8Array([...pubkey, 0])
     const hash = bytesToHex(sha3_256(buf))
     return `0x${hash}`
