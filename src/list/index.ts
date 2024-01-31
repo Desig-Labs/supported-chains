@@ -14,6 +14,7 @@ import { SuiDevnet } from './sui-devnet'
 import { AptosMainnet } from './aptos-mainnet'
 import { AptosTestnet } from './aptos-testnet'
 import { AptosDevnet } from './aptos-devnet'
+import { ZetaMainnet } from './zeta-mainnet'
 import { ZetaTestnet } from './zeta-testnet'
 import { LineaTestnet } from './linea-testnet'
 import { LineaMainnet } from './linea-mainnet'
@@ -66,6 +67,7 @@ export const chains: Record<string, Chain> = {
   '0x21c26a5834152': new AptosMainnet(),
   '0x98a2cc14e0838': new AptosTestnet(),
   '0x227464c4a29ee': new AptosDevnet(),
+  '0x1b58': new ZetaMainnet(),
   '0x1b59': new ZetaTestnet(),
   '0xe708': new LineaMainnet(),
   '0xe704': new LineaTestnet(),
@@ -136,6 +138,7 @@ export {
   AptosTestnet,
   AptosDevnet,
   ZetaTestnet,
+  ZetaMainnet,
   LineaTestnet,
   LineaMainnet,
   PolygonMainNet,
