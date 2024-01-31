@@ -12,13 +12,16 @@ export class ZetaMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/zeta-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/zeta-logo.svg',
-      rpcs: ['', 'https://zetachain-evm.blockpi.network/v1/rpc/public'],
+      rpcs: [
+        'wss://zetachain-mainnet-archive.allthatnode.com:8546',
+        'https://zetachain-mainnet-archive.allthatnode.com:8545',
+      ],
       group: GroupChain.Zeta,
       getAddress: toEvmAddress,
       isMainnet: true,
       endpoint: {
-        https: 'https://zetachain-evm.blockpi.network/v1/rpc/public',
-        wss: '',
+        wss: 'wss://zetachain-mainnet-archive.allthatnode.com:8546',
+        https: 'https://zetachain-mainnet-archive.allthatnode.com:8545',
       },
     })
   }
