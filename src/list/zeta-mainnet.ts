@@ -13,15 +13,15 @@ export class ZetaMainnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/zeta-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/zeta-logo.svg',
       rpcs: [
-        'wss://api-lb.athens2.zetachain.com:26657/websocket',
-        'https://api.mainnet.zetachain.com/evm',
+        'wss://zetachain-mainnet-archive.allthatnode.com:8546',
+        'https://zetachain-mainnet-archive.allthatnode.com:8545',
       ],
       group: GroupChain.Zeta,
       getAddress: toEvmAddress,
       isMainnet: true,
       endpoint: {
-        wss: 'wss://api-lb.athens2.zetachain.com:26657/websocket',
-        https: 'https://api.mainnet.zetachain.com/evm',
+        wss: 'wss://zetachain-mainnet-archive.allthatnode.com:8546',
+        https: 'https://zetachain-mainnet-archive.allthatnode.com:8545',
       },
     })
   }
