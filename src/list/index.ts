@@ -14,6 +14,7 @@ import { SuiDevnet } from './sui-devnet'
 import { AptosMainnet } from './aptos-mainnet'
 import { AptosTestnet } from './aptos-testnet'
 import { AptosDevnet } from './aptos-devnet'
+import { ZetaMainnet } from './zeta-mainnet'
 import { ZetaTestnet } from './zeta-testnet'
 import { LineaTestnet } from './linea-testnet'
 import { LineaMainnet } from './linea-mainnet'
@@ -41,6 +42,8 @@ import { InjectiveMainnet } from './injective-mainnet'
 import { InjectiveTestnet } from './injective-testnet'
 import { BlastTestnet } from './blast-testnet'
 import { BeraTestnet } from './bera-testnet'
+import { Ancient8Mainnet } from './ancient8-mainnet'
+import { Ancient8Testnet } from './ancient8-testnet'
 import { FantomMainnet } from './fantom-mainnet'
 import { FantomTestnet } from './fantom-testnet'
 
@@ -53,7 +56,7 @@ export const chains: Record<string, Chain> = {
   '0xaa36a7': new Sepolia(),
   '0x38': new BscMainnet(),
   '0x61': new BscTestnet(),
-  '0x1f91': new ShardeumTestnet(),
+  '0x1f92': new ShardeumTestnet(),
   '0xa4b1': new ArbitrumMainnet(),
   '0x66eed': new ArbitrumTestnet(),
   '0x28c5f': new TaikoJolnir(),
@@ -66,6 +69,7 @@ export const chains: Record<string, Chain> = {
   '0x21c26a5834152': new AptosMainnet(),
   '0x98a2cc14e0838': new AptosTestnet(),
   '0x227464c4a29ee': new AptosDevnet(),
+  '0x1b58': new ZetaMainnet(),
   '0x1b59': new ZetaTestnet(),
   '0xe708': new LineaMainnet(),
   '0xe704': new LineaTestnet(),
@@ -89,6 +93,8 @@ export const chains: Record<string, Chain> = {
   '0xd49780436dc91': new InjectiveTestnet(),
   '0xa0c71fd': new BlastTestnet(),
   '0x138d5': new BeraTestnet(),
+  '0x34fb5e38': new Ancient8Mainnet(),
+  '0x1ad1ba8': new Ancient8Testnet(),
   '0xfa': new FantomMainnet(),
   '0xfa2': new FantomTestnet(),
 }
@@ -136,6 +142,7 @@ export {
   AptosTestnet,
   AptosDevnet,
   ZetaTestnet,
+  ZetaMainnet,
   LineaTestnet,
   LineaMainnet,
   PolygonMainNet,
@@ -162,6 +169,8 @@ export {
   InjectiveTestnet,
   BlastTestnet,
   BeraTestnet,
+  Ancient8Mainnet,
+  Ancient8Testnet,
   FantomMainnet,
   FantomTestnet,
 }

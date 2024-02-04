@@ -26,7 +26,7 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Polygon zkEVM Mainnet', id: 1101, curve: Curve.secp256k1 },
   { name: 'Moonbase Alpha', id: 1287, curve: Curve.secp256k1 },
   { name: 'Moonbeam', id: 1284, curve: Curve.secp256k1 },
-  { name: 'Shardeum Testnet', id: 8081, curve: Curve.secp256k1 },
+  { name: 'Shardeum Testnet', id: 8082, curve: Curve.secp256k1 },
   { name: 'Arbitrum Mainnet', id: 42161, curve: Curve.secp256k1 },
   { name: 'Arbitrum Testnet', id: 421613, curve: Curve.secp256k1 },
   { name: 'Taiko Jolnir L2', id: 167007, curve: Curve.secp256k1 },
@@ -38,6 +38,8 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Avalanche Fuji', id: 43113, curve: Curve.secp256k1 },
   { name: 'X1 Testnet', id: 195, curve: Curve.secp256k1 },
   { name: 'Bera Testnet', id: 80085, curve: Curve.secp256k1 },
+  { name: 'Ancient8 Mainnet', id: 888888888, curve: Curve.secp256k1 },
+  { name: 'Ancient8 Testnet', id: 28122024, curve: Curve.secp256k1 },
   { name: 'Fantom Testnet', id: 4002, curve: Curve.secp256k1 },
   { name: 'Fantom Mainnet', id: 250, curve: Curve.secp256k1 },
   {
