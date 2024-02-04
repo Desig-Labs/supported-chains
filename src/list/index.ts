@@ -41,6 +41,8 @@ import { InjectiveMainnet } from './injective-mainnet'
 import { InjectiveTestnet } from './injective-testnet'
 import { BlastTestnet } from './blast-testnet'
 import { BeraTestnet } from './bera-testnet'
+import { FantomMainnet } from './fantom-mainnet'
+import { FantomTestnet } from './fantom-testnet'
 
 /**
  * All instances of Chain
@@ -87,6 +89,8 @@ export const chains: Record<string, Chain> = {
   '0xd49780436dc91': new InjectiveTestnet(),
   '0xa0c71fd': new BlastTestnet(),
   '0x138d5': new BeraTestnet(),
+  '0xfa': new FantomMainnet(),
+  '0xfa2': new FantomTestnet(),
 }
 
 /**
@@ -158,4 +162,6 @@ export {
   InjectiveTestnet,
   BlastTestnet,
   BeraTestnet,
+  FantomMainnet,
+  FantomTestnet,
 }
