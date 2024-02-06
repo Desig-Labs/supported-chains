@@ -1,7 +1,7 @@
 import { Chain } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toCosmosAddress } from '../utils'
+import { toInjAddress } from '../utils'
 
 export class InjectiveMainnet extends Chain {
   constructor() {
@@ -14,7 +14,7 @@ export class InjectiveMainnet extends Chain {
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/injective-logo.png',
       rpcs: ['https://sentry.tm.injective.network:443'],
       group: GroupChain.Injective,
-      getAddress: (pubkey) => toCosmosAddress(pubkey, 'inj'),
+      getAddress: toInjAddress,
       isMainnet: true,
       endpoint: {
         https: 'https://sentry.tm.injective.network:443',
