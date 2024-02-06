@@ -4,6 +4,7 @@ import {
   toAptosAddress,
   toCosmosAddress,
   toEvmAddress,
+  toInjAddress,
   toSolanaAddress,
   toSuiAddress,
 } from '../dist'
@@ -43,9 +44,12 @@ describe('utils', () => {
   })
 
   it('injective address', () => {
-    const privkey = utils.randomPrivateKey()
-    const pubkey = getPublicKey(privkey, true)
-    const address = toCosmosAddress(pubkey, 'inj')
-    expect(address).is.not.empty
+    const pub = new Uint8Array([
+      3, 103, 108, 26, 156, 151, 230, 101, 150, 148, 121, 143, 187, 225, 92,
+      152, 215, 192, 128, 248, 54, 47, 46, 34, 106, 104, 59, 23, 166, 32, 33, 3,
+      193,
+    ])
+    const address = toInjAddress(pub)
+    expect(address).eq('inj1m7qjnc52ugxhvh5rwl60jke30h0l76agfk9jmj')
   })
 })

@@ -117,3 +117,20 @@ export const toAptosAddress = (pubkey: Uint8Array) => {
     return ''
   }
 }
+
+/**
+ * Convert a pubkey to an Injective address
+ * @param pubkey Pubkey
+ * @returns Injective address
+ */
+export const toInjAddress = (pubkey: Uint8Array) => {
+  try {
+    const hex = toEvmAddress(pubkey)
+    const cleanAddress = hex.startsWith('0x') ? hex.slice(2) : hex
+    const addressBuffer = Buffer.from(cleanAddress, 'hex')
+    const bech32Address = bech32.encode('inj', bech32.toWords(addressBuffer))
+    return bech32Address
+  } catch (er) {
+    return ''
+  }
+}
