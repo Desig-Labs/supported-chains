@@ -12,13 +12,13 @@ export class VictionMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/viction-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/viction-logo.svg',
-      rpcs: ['wss://ws.tomochain.com', 'https://rpc.tomochain.com'],
+      rpcs: ['wss://ws.viction.xyz', 'https://rpc.viction.xyz'],
       group: GroupChain.Viction,
       getAddress: toEvmAddress,
       isMainnet: true,
       endpoint: {
-        wss: 'wss://ws.tomochain.com',
-        https: 'https://rpc.tomochain.com',
+        wss: 'wss://ws.viction.xyz',
+        https: 'https://rpc.viction.xyz',
       },
     })
   }

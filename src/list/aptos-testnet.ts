@@ -17,9 +17,7 @@ export class AptosTestnet extends Chain {
       getAddress: toAptosAddress,
       isMainnet: false,
       endpoint: {
-        wss: 'wss://rpc.ankr.com/http/aptos_testnet/v1/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
-        https:
-          'https://rpc.ankr.com/http/aptos_testnet/v1/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
+        https: 'https://fullnode.testnet.aptoslabs.com/v1',
       },
     })
   }
