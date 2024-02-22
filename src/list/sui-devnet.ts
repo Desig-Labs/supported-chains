@@ -16,6 +16,7 @@ export class SuiDevnet extends Chain {
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         https: 'https://fullnode.devnet.sui.io',
       },

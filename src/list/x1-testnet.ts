@@ -16,6 +16,7 @@ export class X1Testnet extends Chain {
       group: GroupChain.X1,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         wss: 'wss://testws.x1.tech',
         https: 'https://testrpc.x1.tech',

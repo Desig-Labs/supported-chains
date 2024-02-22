@@ -16,6 +16,7 @@ export class VictionMainnet extends Chain {
       group: GroupChain.Viction,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: false,
       endpoint: {
         wss: 'wss://ws.viction.xyz',
         https: 'https://rpc.viction.xyz',

@@ -19,6 +19,7 @@ export class ArbitrumTestnet extends Chain {
       group: GroupChain.Arbitrum,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         https: 'https://goerli-rollup.arbitrum.io/rpc',
         wss: 'wss://goerli-rollup.arbitrum.io/feed',

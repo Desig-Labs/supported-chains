@@ -19,6 +19,7 @@ export class PolygonMumbai extends Chain {
       group: GroupChain.Polygon_pos,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/polygon_mumbai/ws',
         https: 'https://rpc.ankr.com/polygon_mumbai',

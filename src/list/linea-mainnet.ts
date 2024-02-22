@@ -16,6 +16,7 @@ export class LineaMainnet extends Chain {
       group: GroupChain.Linea,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/linea/ws',
         https: 'https://rpc.ankr.com/linea',

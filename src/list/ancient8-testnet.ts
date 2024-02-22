@@ -19,6 +19,7 @@ export class Ancient8Testnet extends Chain {
       group: GroupChain.Ancient8,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         https: 'https://rpcv2-testnet.ancient8.gg',
         wss: 'wss://rpcv2-testnet.ancient8.gg',

@@ -16,6 +16,7 @@ export class ArbitrumMainnet extends Chain {
       group: GroupChain.Arbitrum,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/arbitrum/ws',
         https: 'https://rpc.ankr.com/arbitrum',

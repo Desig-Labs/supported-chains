@@ -17,6 +17,7 @@ export type ChainParams = {
   rpcs: string[]
   group: GroupChain
   isMainnet: boolean
+  isAnkr: boolean
   getAddress: (pubkey: Uint8Array) => string
   endpoint: {
     https: string

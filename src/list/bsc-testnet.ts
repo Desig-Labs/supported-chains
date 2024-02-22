@@ -19,6 +19,7 @@ export class BscTestnet extends Chain {
       group: GroupChain.Binance,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/bsc_testnet_chapel/ws',
         https: 'https://rpc.ankr.com/bsc_testnet_chapel',

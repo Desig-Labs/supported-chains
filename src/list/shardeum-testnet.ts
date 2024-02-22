@@ -16,6 +16,7 @@ export class ShardeumTestnet extends Chain {
       group: GroupChain.Shardeum,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         wss: 'wss://sphinx.shardeum.org',
         https: 'https://sphinx.shardeum.org',

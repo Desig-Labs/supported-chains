@@ -19,6 +19,7 @@ export class AvalancheMainnet extends Chain {
       group: GroupChain.Avalanche,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/avalanche/ws',
         https: 'https://rpc.ankr.com/avalanche',

@@ -19,6 +19,7 @@ export class AvalancheFuji extends Chain {
       group: GroupChain.Avalanche,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/avalanche_fuji/ws',
         https: 'https://rpc.ankr.com/avalanche_fuji',

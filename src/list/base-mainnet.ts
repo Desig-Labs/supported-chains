@@ -16,6 +16,7 @@ export class BaseMainnet extends Chain {
       group: GroupChain.Base,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/base/ws',
         https: 'https://rpc.ankr.com/base',

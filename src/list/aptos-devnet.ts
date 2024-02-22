@@ -16,6 +16,7 @@ export class AptosDevnet extends Chain {
       group: GroupChain.Aptos,
       getAddress: toAptosAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         https: 'https://fullnode.devnet.aptoslabs.com',
       },

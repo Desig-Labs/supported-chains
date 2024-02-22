@@ -16,6 +16,7 @@ export class BlastTestnet extends Chain {
       group: GroupChain.Blast,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         https: 'https://rpc.ankr.com/blast_testnet_sepolia',
         wss: '',

@@ -16,6 +16,7 @@ export class InjectiveMainnet extends Chain {
       group: GroupChain.Injective,
       getAddress: toInjAddress,
       isMainnet: true,
+      isAnkr: false,
       endpoint: {
         https: 'https://sentry.tm.injective.network:443',
         wss: '',

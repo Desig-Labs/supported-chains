@@ -16,6 +16,7 @@ export class FantomTestnet extends Chain {
       group: GroupChain.Fantom,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         wss: '',
         https: 'https://rpc.ankr.com/fantom_testnet',

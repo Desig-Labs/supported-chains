@@ -19,6 +19,7 @@ export class TaikoKatla extends Chain {
       group: GroupChain.Taiko,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         wss: 'wss://rpc.katla.taiko.xyz',
         https: 'https://taiko-katla.blockpi.network/v1/rpc/public',

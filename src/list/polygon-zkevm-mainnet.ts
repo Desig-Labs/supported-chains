@@ -19,6 +19,7 @@ export class PolygonZkEVMMainNet extends Chain {
       group: GroupChain.Polygon_zkevm,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/polygon_zkevm/ws',
         https: 'https://rpc.ankr.com/polygon_zkevm',

@@ -16,6 +16,7 @@ export class SeiMainnet extends Chain {
       group: GroupChain.Sei,
       getAddress: (pubkey) => toCosmosAddress(pubkey, 'sei'),
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         https: 'https://rpc.ankr.com/sei',
         wss: 'wss://rpc.ankr.com/sei/ws',

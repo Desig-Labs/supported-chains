@@ -16,6 +16,7 @@ export class Moonbeam extends Chain {
       group: GroupChain.Moonbeam,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/moonbeam/ws',
         https: 'https://rpc.ankr.com/moonbeam',

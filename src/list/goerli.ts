@@ -19,6 +19,7 @@ export class Goerli extends Chain {
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/eth_goerli/ws',
         https: 'https://rpc.ankr.com/eth_goerli',

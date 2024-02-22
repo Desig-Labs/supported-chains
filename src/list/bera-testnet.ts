@@ -16,6 +16,7 @@ export class BeraTestnet extends Chain {
       group: GroupChain.Bera,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         https: 'https://rpc.ankr.com/berachain_testnet',
         wss: '',

@@ -16,6 +16,7 @@ export class SuiTestnet extends Chain {
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/sui_testnet/ws',
         https: 'https://rpc.ankr.com/sui_testnet',

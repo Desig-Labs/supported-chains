@@ -19,6 +19,7 @@ export class MoonBaseAlpha extends Chain {
       group: GroupChain.Moonbeam,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         wss: 'wss://wss.api.moonbase.moonbeam.network',
         https: 'https://rpc.api.moonbase.moonbeam.network',

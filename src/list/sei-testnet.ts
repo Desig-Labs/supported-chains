@@ -16,6 +16,7 @@ export class SeiTestnet extends Chain {
       group: GroupChain.Sei,
       getAddress: (pubkey) => toCosmosAddress(pubkey, 'sei'),
       isMainnet: false,
+      isAnkr: false,
       endpoint: {
         https: 'https://rpc.atlantic-2.seinetwork.io',
         wss: 'wss://rpc.ankr.com/sei_testnet/ws',

@@ -19,6 +19,7 @@ export class BaseTestnet extends Chain {
       group: GroupChain.Base,
       getAddress: toEvmAddress,
       isMainnet: false,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/base_goerli/ws',
         https: 'https://rpc.ankr.com/base_goerli',

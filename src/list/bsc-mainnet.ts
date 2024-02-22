@@ -16,6 +16,7 @@ export class BscMainnet extends Chain {
       group: GroupChain.Binance,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/bsc/ws',
         https: 'https://rpc.ankr.com/bsc',

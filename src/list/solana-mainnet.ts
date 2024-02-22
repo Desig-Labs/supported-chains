@@ -16,6 +16,7 @@ export class SolanaMainnet extends Chain {
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/solana/ws',
         https: 'https://rpc.ankr.com/solana',

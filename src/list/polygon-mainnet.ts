@@ -16,6 +16,7 @@ export class PolygonMainNet extends Chain {
       group: GroupChain.Polygon_pos,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/polygon/ws',
         https: 'https://rpc.ankr.com/polygon',

@@ -16,6 +16,7 @@ export class Ancient8Mainnet extends Chain {
       group: GroupChain.Ancient8,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: false,
       endpoint: {
         https: 'https://scan.ancient8.gg',
         wss: '',

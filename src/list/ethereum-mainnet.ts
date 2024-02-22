@@ -16,6 +16,7 @@ export class EthereumMainnet extends Chain {
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
       isMainnet: true,
+      isAnkr: true,
       endpoint: {
         wss: 'wss://rpc.ankr.com/eth/ws',
         https: 'https://rpc.ankr.com/eth',
