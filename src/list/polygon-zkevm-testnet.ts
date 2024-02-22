@@ -13,16 +13,15 @@ export class PolygonZkEVMTestnet extends Chain {
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/polygon-zkevm-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/polygon-zkevm-logo.svg',
       rpcs: [
-        'wss://rpc.ankr.com/polygon_zkevm_testnet/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
-        'https://rpc.ankr.com/polygon_zkevm_testnet/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
+        'wss://rpc.ankr.com/polygon_zkevm_testnet/ws',
+        'https://rpc.ankr.com/polygon_zkevm_testnet',
       ],
       group: GroupChain.Polygon_zkevm,
       getAddress: toEvmAddress,
       isMainnet: false,
       endpoint: {
-        wss: 'wss://rpc.ankr.com/polygon_zkevm_testnet/ws/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
-        https:
-          'https://rpc.ankr.com/polygon_zkevm_testnet/51585d3e88bdfa7a4f9376afeb1b80ecfaf3c9e8edbc80645f251623f8a76e7f',
+        wss: 'wss://rpc.ankr.com/polygon_zkevm_testnet/ws',
+        https: 'https://rpc.ankr.com/polygon_zkevm_testnet',
       },
     })
   }
