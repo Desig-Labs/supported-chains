@@ -12,12 +12,16 @@ export class ArbitrumTestnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/arb-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/arb-logo.svg',
-      rpcs: ['', 'https://goerli-rollup.arbitrum.io/rpc'],
+      rpcs: [
+        'wss://goerli-rollup.arbitrum.io/feed',
+        'https://goerli-rollup.arbitrum.io/rpc',
+      ],
       group: GroupChain.Arbitrum,
       getAddress: toEvmAddress,
       isMainnet: false,
       endpoint: {
         https: 'https://goerli-rollup.arbitrum.io/rpc',
+        wss: 'wss://goerli-rollup.arbitrum.io/feed',
       },
     })
   }
