@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class BscMainnet extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/bsc/ws',
+      https: 'https://rpc.ankr.com/bsc',
+    }
+
     super({
       name: 'Binance Smart Chain Mainnet',
       alias: 'Binance',
@@ -12,15 +17,10 @@ export class BscMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bsc-logo.png',
-      rpcs: ['wss://rpc.ankr.com/bsc/ws', 'https://rpc.ankr.com/bsc'],
       group: GroupChain.Binance,
       getAddress: toEvmAddress,
       isMainnet: true,
-      isAnkr: true,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/bsc/ws',
-        https: 'https://rpc.ankr.com/bsc',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

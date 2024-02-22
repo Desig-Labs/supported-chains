@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class EthereumMainnet extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/eth/ws',
+      https: 'https://rpc.ankr.com/eth',
+    }
+
     super({
       name: 'Ethereum Mainnet',
       alias: 'Ethereum',
@@ -12,15 +17,10 @@ export class EthereumMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
-      rpcs: ['wss://rpc.ankr.com/eth/ws', 'https://rpc.ankr.com/eth'],
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
       isMainnet: true,
-      isAnkr: true,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/eth/ws',
-        https: 'https://rpc.ankr.com/eth',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

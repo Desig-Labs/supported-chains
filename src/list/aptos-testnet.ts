@@ -12,11 +12,9 @@ export class AptosTestnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-logo.png',
-      rpcs: ['https://fullnode.testnet.aptoslabs.com/v1'],
       group: GroupChain.Aptos,
       getAddress: toAptosAddress,
       isMainnet: false,
-      isAnkr: false,
       endpoint: {
         https: 'https://fullnode.testnet.aptoslabs.com/v1',
       },

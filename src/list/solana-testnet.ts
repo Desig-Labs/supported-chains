@@ -12,13 +12,12 @@ export class SolanaTestnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-logo.svg',
-      rpcs: ['https://api.testnet.solana.com'],
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
       isMainnet: false,
-      isAnkr: false,
       endpoint: {
         https: 'https://api.testnet.solana.com',
+        wss: '',
       },
     })
   }

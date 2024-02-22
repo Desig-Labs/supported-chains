@@ -12,11 +12,9 @@ export class MovementTestnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/mvmt-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/mvmt-logo.png',
-      rpcs: ['https://seed-node1.movementlabs.xyz'],
       group: GroupChain.Movement,
       getAddress: toAptosAddress,
       isMainnet: false,
-      isAnkr: false,
       endpoint: {
         https: 'https://seed-node1.movementlabs.xyz',
       },

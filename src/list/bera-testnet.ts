@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class BeraTestnet extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      https: 'https://rpc.ankr.com/berachain_testnet',
+      wss: '',
+    }
+
     super({
       name: 'Bera Testnet',
       alias: 'Bera Testnet',
@@ -12,15 +17,10 @@ export class BeraTestnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bera-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bera-logo.png',
-      rpcs: ['', 'https://rpc.ankr.com/berachain_testnet'],
       group: GroupChain.Bera,
       getAddress: toEvmAddress,
       isMainnet: false,
-      isAnkr: true,
-      endpoint: {
-        https: 'https://rpc.ankr.com/berachain_testnet',
-        wss: '',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

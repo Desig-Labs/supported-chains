@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toSolanaAddress } from '../utils'
+import { genEndpoint, toSolanaAddress } from '../utils'
 
 export class SolanaMainnet extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/solana/ws',
+      https: 'https://rpc.ankr.com/solana',
+    }
+
     super({
       name: 'Solana Mainnet',
       alias: 'Solana',
@@ -12,15 +17,10 @@ export class SolanaMainnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-logo.svg',
-      rpcs: ['https://rpc.ankr.com/solana'],
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
       isMainnet: true,
-      isAnkr: true,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/solana/ws',
-        https: 'https://rpc.ankr.com/solana',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class Sepolia extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/eth_sepolia/ws',
+      https: 'https://rpc.ankr.com/eth_sepolia',
+    }
+
     super({
       name: 'Sepolia',
       alias: 'Sepolia',
@@ -12,18 +17,10 @@ export class Sepolia extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
-      rpcs: [
-        'wss://rpc.ankr.com/eth_sepolia/ws',
-        'https://rpc.ankr.com/eth_sepolia',
-      ],
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
       isMainnet: false,
-      isAnkr: true,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/eth_sepolia/ws',
-        https: 'https://rpc.ankr.com/eth_sepolia',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

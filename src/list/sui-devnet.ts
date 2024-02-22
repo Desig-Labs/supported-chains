@@ -12,13 +12,12 @@ export class SuiDevnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-logo.svg',
-      rpcs: ['https://fullnode.devnet.sui.io'],
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
       isMainnet: false,
-      isAnkr: false,
       endpoint: {
         https: 'https://fullnode.devnet.sui.io',
+        wss: '',
       },
     })
   }

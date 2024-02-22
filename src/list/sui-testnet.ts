@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toSuiAddress } from '../utils'
+import { genEndpoint, toSuiAddress } from '../utils'
 
 export class SuiTestnet extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/sui_testnet/ws',
+      https: 'https://rpc.ankr.com/sui_testnet',
+    }
+
     super({
       name: 'Sui Testnet',
       alias: 'Sui Testnet',
@@ -12,15 +17,10 @@ export class SuiTestnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sui-logo.svg',
-      rpcs: ['https://rpc.ankr.com/sui_testnet'],
       group: GroupChain.Sui,
       getAddress: toSuiAddress,
       isMainnet: false,
-      isAnkr: true,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/sui_testnet/ws',
-        https: 'https://rpc.ankr.com/sui_testnet',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

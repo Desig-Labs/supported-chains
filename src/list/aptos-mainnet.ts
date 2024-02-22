@@ -12,11 +12,9 @@ export class AptosMainnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-logo.png',
-      rpcs: ['https://fullnode.mainnet.aptoslabs.com/v1'],
       group: GroupChain.Aptos,
       getAddress: toAptosAddress,
       isMainnet: true,
-      isAnkr: false,
       endpoint: {
         https: 'https://fullnode.mainnet.aptoslabs.com/v1',
       },
