@@ -12,10 +12,6 @@ export class TaikoKatla extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/taiko-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/taiko-logo.svg',
-      rpcs: [
-        'wss://rpc.katla.taiko.xyz',
-        'https://taiko-katla.blockpi.network/v1/rpc/public',
-      ],
       group: GroupChain.Taiko,
       getAddress: toEvmAddress,
       isMainnet: false,

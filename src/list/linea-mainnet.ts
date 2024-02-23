@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class LineaMainnet extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/linea/ws',
+      https: 'https://rpc.ankr.com/linea',
+    }
+
     super({
       name: 'Linea Mainnet',
       alias: 'Linea',
@@ -12,14 +17,10 @@ export class LineaMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/linea-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/linea-logo.svg',
-      rpcs: ['wss://rpc.ankr.com/linea/ws', 'https://rpc.ankr.com/linea'],
       group: GroupChain.Linea,
       getAddress: toEvmAddress,
       isMainnet: true,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/linea/ws',
-        https: 'https://rpc.ankr.com/linea',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

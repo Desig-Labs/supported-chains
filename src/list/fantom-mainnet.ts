@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class FantomMainnet extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: '',
+      https: 'https://rpc.ankr.com/fantom',
+    }
+
     super({
       name: 'Fantom Mainnet',
       alias: 'Fantom',
@@ -12,14 +17,10 @@ export class FantomMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/fantom-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/fantom-logo.png',
-      rpcs: ['', 'https://rpc.ankr.com/fantom'],
       group: GroupChain.Fantom,
       getAddress: toEvmAddress,
       isMainnet: true,
-      endpoint: {
-        wss: '',
-        https: 'https://rpc.ankr.com/fantom',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

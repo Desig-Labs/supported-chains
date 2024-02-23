@@ -14,16 +14,19 @@ export type ChainParams = {
   curve: Curve
   icon: string
   logo?: string
-  rpcs: string[]
   group: GroupChain
   isMainnet: boolean
   getAddress: (pubkey: Uint8Array) => string
-  endpoint: {
-    https: string
-    wss?: string
-  }
+  endpoint: Endpoint
+}
+export type RpcProvider = {
+  ankr?: string
 }
 
+export type Endpoint = {
+  https: string
+  wss?: string
+}
 export class Chain {
   public readonly name: string
   public readonly alias: string
@@ -32,14 +35,10 @@ export class Chain {
   public readonly curve: Curve
   public readonly icon: string
   public readonly logo: string
-  public readonly rpcs: string[]
   public readonly group: GroupChain
   public readonly getAddress: (pubkey: Uint8Array) => string
   public readonly isMainnet: boolean
-  public readonly endpoint: {
-    https: string
-    wss?: string
-  }
+  public readonly endpoint: Endpoint
   constructor({
     name,
     alias,
@@ -48,7 +47,6 @@ export class Chain {
     curve,
     icon,
     logo,
-    rpcs,
     group,
     getAddress,
     isMainnet,
@@ -61,14 +59,9 @@ export class Chain {
     this.curve = curve
     this.icon = icon
     this.logo = logo || icon
-    this.rpcs = rpcs
     this.group = group
     this.getAddress = getAddress
     this.isMainnet = isMainnet
     this.endpoint = endpoint
-  }
-
-  get rpc() {
-    return this.rpcs[0]
   }
 }

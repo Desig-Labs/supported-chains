@@ -12,7 +12,6 @@ export class AptosDevnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/apt-logo.png',
-      rpcs: ['https://fullnode.devnet.aptoslabs.com'],
       group: GroupChain.Aptos,
       getAddress: toAptosAddress,
       isMainnet: false,
