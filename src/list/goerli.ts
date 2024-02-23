@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class Goerli extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/eth_goerli/ws',
+      https: 'https://rpc.ankr.com/eth_goerli',
+    }
+
     super({
       name: 'Goerli',
       alias: 'Goerli',
@@ -12,17 +17,10 @@ export class Goerli extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/eth-logo.png',
-      rpcs: [
-        'wss://rpc.ankr.com/eth_goerli/ws',
-        'https://rpc.ankr.com/eth_goerli',
-      ],
       group: GroupChain.Ethereum,
       getAddress: toEvmAddress,
       isMainnet: false,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/eth_goerli/ws',
-        https: 'https://rpc.ankr.com/eth_goerli',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

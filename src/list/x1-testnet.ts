@@ -12,7 +12,6 @@ export class X1Testnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/okx-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/okx-logo.svg',
-      rpcs: ['wss://testws.x1.tech', 'https://testrpc.x1.tech'],
       group: GroupChain.X1,
       getAddress: toEvmAddress,
       isMainnet: false,

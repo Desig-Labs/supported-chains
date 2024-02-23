@@ -12,10 +12,6 @@ export class MoonBaseAlpha extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/moonbeam-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/moonbeam-logo.svg',
-      rpcs: [
-        'wss://wss.api.moonbase.moonbeam.network',
-        'https://rpc.api.moonbase.moonbeam.network',
-      ],
       group: GroupChain.Moonbeam,
       getAddress: toEvmAddress,
       isMainnet: false,

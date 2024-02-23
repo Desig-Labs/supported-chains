@@ -12,7 +12,6 @@ export class InjectiveMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/injective-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/injective-logo.png',
-      rpcs: ['https://sentry.tm.injective.network:443'],
       group: GroupChain.Injective,
       getAddress: toInjAddress,
       isMainnet: true,

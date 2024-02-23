@@ -1,10 +1,15 @@
-import { Chain } from '../chain'
+import { Chain, RpcProvider } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { toEvmAddress } from '../utils'
+import { genEndpoint, toEvmAddress } from '../utils'
 
 export class AvalancheFuji extends Chain {
-  constructor() {
+  constructor(provider?: RpcProvider) {
+    const endpoint = {
+      wss: 'wss://rpc.ankr.com/avalanche_fuji/ws',
+      https: 'https://rpc.ankr.com/avalanche_fuji',
+    }
+
     super({
       name: 'Avalanche Fuji',
       alias: 'Avalanche Fuji',
@@ -12,17 +17,10 @@ export class AvalancheFuji extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/avalanche-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/avalanche-logo.svg',
-      rpcs: [
-        'wss://rpc.ankr.com/avalanche_fuji/ws',
-        'https://rpc.ankr.com/avalanche_fuji',
-      ],
       group: GroupChain.Avalanche,
       getAddress: toEvmAddress,
       isMainnet: false,
-      endpoint: {
-        wss: 'wss://rpc.ankr.com/avalanche_fuji/ws',
-        https: 'https://rpc.ankr.com/avalanche_fuji',
-      },
+      endpoint: genEndpoint(endpoint, provider?.ankr),
     })
   }
 }

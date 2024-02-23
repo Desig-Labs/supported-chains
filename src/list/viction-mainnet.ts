@@ -12,7 +12,6 @@ export class VictionMainnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/viction-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/viction-logo.svg',
-      rpcs: ['wss://ws.viction.xyz', 'https://rpc.viction.xyz'],
       group: GroupChain.Viction,
       getAddress: toEvmAddress,
       isMainnet: true,

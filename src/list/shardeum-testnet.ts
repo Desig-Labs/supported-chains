@@ -12,7 +12,6 @@ export class ShardeumTestnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/shardeum-logo.svg',
-      rpcs: ['wss://sphinx.shardeum.org', 'https://sphinx.shardeum.org'],
       group: GroupChain.Shardeum,
       getAddress: toEvmAddress,
       isMainnet: false,

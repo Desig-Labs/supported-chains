@@ -12,10 +12,6 @@ export class Ancient8Testnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/a8-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/a8-logo.svg',
-      rpcs: [
-        'wss://rpcv2-testnet.ancient8.gg',
-        'https://rpcv2-testnet.ancient8.gg',
-      ],
       group: GroupChain.Ancient8,
       getAddress: toEvmAddress,
       isMainnet: false,

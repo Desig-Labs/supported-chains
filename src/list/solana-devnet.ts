@@ -12,7 +12,6 @@ export class SolanaDevnet extends Chain {
       curve: Curve.ed25519,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sol-logo.svg',
-      rpcs: ['https://api.devnet.solana.com'],
       group: GroupChain.Solana,
       getAddress: toSolanaAddress,
       isMainnet: false,

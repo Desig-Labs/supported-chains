@@ -6,6 +6,7 @@ import { keccak_256, sha3_256 } from '@noble/hashes/sha3'
 import { sha256 as nobleSha256 } from '@noble/hashes/sha256'
 import { bytesToHex, concatBytes } from '@noble/hashes/utils'
 import { ripemd160 as nobleRipemd160 } from '@noble/hashes/ripemd160'
+import { Endpoint } from './chain'
 
 const SECP256K1_PUBLIC_KEY_SIZE = 33
 const ED25519_PUBLIC_KEY_SIZE = 32
@@ -132,5 +133,13 @@ export const toInjAddress = (pubkey: Uint8Array) => {
     return bech32Address
   } catch (er) {
     return ''
+  }
+}
+
+export const genEndpoint = (endpoint: Endpoint, key?: string): Endpoint => {
+  if (!key) return endpoint
+  return {
+    https: endpoint.https + `/${key}`,
+    wss: endpoint?.wss ? endpoint?.wss + `/${key}` : '',
   }
 }

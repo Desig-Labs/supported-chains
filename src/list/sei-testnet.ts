@@ -12,7 +12,6 @@ export class SeiTestnet extends Chain {
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sei-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/sei-logo.png',
-      rpcs: ['https://rpc.atlantic-2.seinetwork.io'],
       group: GroupChain.Sei,
       getAddress: (pubkey) => toCosmosAddress(pubkey, 'sei'),
       isMainnet: false,
