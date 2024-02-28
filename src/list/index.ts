@@ -46,6 +46,8 @@ import { Ancient8Mainnet } from './ancient8-mainnet'
 import { Ancient8Testnet } from './ancient8-testnet'
 import { FantomMainnet } from './fantom-mainnet'
 import { FantomTestnet } from './fantom-testnet'
+import { ScrollMainnet } from './scroll-mainnet'
+import { ScrollTestnet } from './scroll-testnet'
 
 /**
  * Get all chains with provider
@@ -100,6 +102,8 @@ export const getChains = (provider?: RpcProvider) => {
     '0x1ad1ba8': new Ancient8Testnet(),
     '0xfa': new FantomMainnet(provider),
     '0xfa2': new FantomTestnet(provider),
+    '0x82750': new ScrollMainnet(provider),
+    '0x8274f': new ScrollTestnet(provider),
   }
   return chains
 }
@@ -184,4 +188,6 @@ export {
   Ancient8Testnet,
   FantomMainnet,
   FantomTestnet,
+  ScrollMainnet,
+  ScrollTestnet,
 }
