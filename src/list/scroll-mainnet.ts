@@ -16,7 +16,7 @@ export class ScrollMainnet extends Chain {
       chainId: '0x82750',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/scroll-icon.svg',
-      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/scroll-logo.png',
+      logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/scroll-logo.svg',
       group: GroupChain.Scroll,
       getAddress: toEvmAddress,
       isMainnet: true,
