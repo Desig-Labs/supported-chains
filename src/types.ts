@@ -24,4 +24,5 @@ export enum GroupChain {
   Ancient8 = 'ancient8',
   Fantom = 'fantom',
   Scroll = 'scroll',
+  Manta_pacific = 'manta_pacific',
 }

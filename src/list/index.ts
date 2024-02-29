@@ -48,6 +48,8 @@ import { FantomMainnet } from './fantom-mainnet'
 import { FantomTestnet } from './fantom-testnet'
 import { ScrollMainnet } from './scroll-mainnet'
 import { ScrollTestnet } from './scroll-testnet'
+import { MantaPacificMainnet } from './manta-pacific-mainnet'
+import { MantaPacificTestnet } from './manta-pacific-testnet'
 
 /**
  * Get all chains with provider
@@ -104,6 +106,8 @@ export const getChains = (provider?: RpcProvider) => {
     '0xfa2': new FantomTestnet(provider),
     '0x82750': new ScrollMainnet(provider),
     '0x8274f': new ScrollTestnet(provider),
+    '0xa9': new MantaPacificMainnet(),
+    '0x34816d': new MantaPacificTestnet(),
   }
   return chains
 }
@@ -190,4 +194,6 @@ export {
   FantomTestnet,
   ScrollMainnet,
   ScrollTestnet,
+  MantaPacificMainnet,
+  MantaPacificTestnet,
 }
