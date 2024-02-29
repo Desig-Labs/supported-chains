@@ -12,7 +12,7 @@ export class ScrollTestnet extends Chain {
 
     super({
       name: 'Scroll Testnet',
-      alias: 'Scroll',
+      alias: 'Scroll Testnet',
       chainId: '0x8274f',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/scroll-icon.svg',
