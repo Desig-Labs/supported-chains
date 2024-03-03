@@ -40,6 +40,7 @@ import { MovementTestnet } from './movement-testnet'
 import { X1Testnet } from './x1-testnet'
 import { InjectiveMainnet } from './injective-mainnet'
 import { InjectiveTestnet } from './injective-testnet'
+import { BlastMainnet } from './blast-mainnet'
 import { BlastTestnet } from './blast-testnet'
 import { BeraTestnet } from './bera-testnet'
 import { Ancient8Mainnet } from './ancient8-mainnet'
@@ -98,6 +99,7 @@ export const getChains = (provider?: RpcProvider) => {
     '0xc3': new X1Testnet(),
     '0x63f93d0f947be': new InjectiveMainnet(),
     '0xd49780436dc91': new InjectiveTestnet(),
+    '0x13e31': new BlastMainnet(),
     '0xa0c71fd': new BlastTestnet(),
     '0x138d5': new BeraTestnet(),
     '0x34fb5e38': new Ancient8Mainnet(),
@@ -186,6 +188,7 @@ export {
   X1Testnet,
   InjectiveMainnet,
   InjectiveTestnet,
+  BlastMainnet,
   BlastTestnet,
   BeraTestnet,
   Ancient8Mainnet,
