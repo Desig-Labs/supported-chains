@@ -57,6 +57,11 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
     curve: Curve.secp256k1,
   },
   {
+    name: 'Blast Mainnet',
+    id: 81457,
+    curve: Curve.secp256k1,
+  },
+  {
     name: 'Blast Testnet',
     id: 168587773,
     curve: Curve.secp256k1,
