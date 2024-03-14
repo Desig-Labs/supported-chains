@@ -46,6 +46,8 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Scroll Testnet', id: 534351, curve: Curve.secp256k1 },
   { name: 'Manta Pacific Mainnet', id: 169, curve: Curve.secp256k1 },
   { name: 'Manta Pacific Testnet', id: 3441005, curve: Curve.secp256k1 },
+  { name: 'Conflux eSpace', id: 1030, curve: Curve.secp256k1 },
+  { name: 'Conflux eSpace Testnet', id: 71, curve: Curve.secp256k1 },
   {
     name: 'Injective Mainnet',
     id: customizeChainId('injective-1'),

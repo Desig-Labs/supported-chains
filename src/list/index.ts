@@ -51,6 +51,8 @@ import { ScrollMainnet } from './scroll-mainnet'
 import { ScrollTestnet } from './scroll-testnet'
 import { MantaPacificMainnet } from './manta-pacific-mainnet'
 import { MantaPacificTestnet } from './manta-pacific-testnet'
+import { ConfluxTestnet } from './conflux-testnet'
+import { ConfluxMainnet } from './conflux-mainnet'
 
 /**
  * Get all chains with provider
@@ -67,7 +69,7 @@ export const getChains = (provider?: RpcProvider) => {
     '0x1f92': new ShardeumTestnet(),
     '0xa4b1': new ArbitrumMainnet(provider),
     '0x66eed': new ArbitrumTestnet(),
-    '0x28c5f': new TaikoKatla(),
+    '0x28c60': new TaikoKatla(),
     '0xbb6a83b4b049e': new SolanaMainnet(provider),
     '0x6f09c097f2c10': new SolanaTestnet(),
     '0xbdadbf327bc03': new SolanaDevnet(),
@@ -99,8 +101,8 @@ export const getChains = (provider?: RpcProvider) => {
     '0xc3': new X1Testnet(),
     '0x63f93d0f947be': new InjectiveMainnet(),
     '0xd49780436dc91': new InjectiveTestnet(),
-    '0x13e31': new BlastMainnet(),
-    '0xa0c71fd': new BlastTestnet(),
+    '0x13e31': new BlastMainnet(provider),
+    '0xa0c71fd': new BlastTestnet(provider),
     '0x138d5': new BeraTestnet(),
     '0x34fb5e38': new Ancient8Mainnet(),
     '0x1ad1ba8': new Ancient8Testnet(),
@@ -110,6 +112,8 @@ export const getChains = (provider?: RpcProvider) => {
     '0x8274f': new ScrollTestnet(provider),
     '0xa9': new MantaPacificMainnet(),
     '0x34816d': new MantaPacificTestnet(),
+    '0x406': new ConfluxMainnet(),
+    '0x47': new ConfluxTestnet(),
   }
   return chains
 }
@@ -199,4 +203,6 @@ export {
   ScrollTestnet,
   MantaPacificMainnet,
   MantaPacificTestnet,
+  ConfluxMainnet,
+  ConfluxTestnet,
 }

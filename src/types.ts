@@ -25,4 +25,5 @@ export enum GroupChain {
   Fantom = 'fantom',
   Scroll = 'scroll',
   Manta_pacific = 'manta_pacific',
+  Conflux = 'conflux',
 }
