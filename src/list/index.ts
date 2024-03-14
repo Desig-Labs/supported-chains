@@ -69,7 +69,7 @@ export const getChains = (provider?: RpcProvider) => {
     '0x1f92': new ShardeumTestnet(),
     '0xa4b1': new ArbitrumMainnet(provider),
     '0x66eed': new ArbitrumTestnet(),
-    '0x28c5f': new TaikoKatla(),
+    '0x28c60': new TaikoKatla(),
     '0xbb6a83b4b049e': new SolanaMainnet(provider),
     '0x6f09c097f2c10': new SolanaTestnet(),
     '0xbdadbf327bc03': new SolanaDevnet(),
