@@ -51,6 +51,8 @@ import { ScrollMainnet } from './scroll-mainnet'
 import { ScrollTestnet } from './scroll-testnet'
 import { MantaPacificMainnet } from './manta-pacific-mainnet'
 import { MantaPacificTestnet } from './manta-pacific-testnet'
+import { ConfluxTestnet } from './conflux-testnet'
+import { ConfluxMainnet } from './conflux-mainnet'
 
 /**
  * Get all chains with provider
@@ -110,6 +112,8 @@ export const getChains = (provider?: RpcProvider) => {
     '0x8274f': new ScrollTestnet(provider),
     '0xa9': new MantaPacificMainnet(),
     '0x34816d': new MantaPacificTestnet(),
+    '0x406': new ConfluxMainnet(),
+    '0x47': new ConfluxTestnet(),
   }
   return chains
 }
@@ -199,4 +203,6 @@ export {
   ScrollTestnet,
   MantaPacificMainnet,
   MantaPacificTestnet,
+  ConfluxMainnet,
+  ConfluxTestnet,
 }
