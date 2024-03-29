@@ -3,7 +3,6 @@ import { Curve } from '../curve'
 import { BscMainnet } from './bsc-mainnet'
 import { BscTestnet } from './bsc-testnet'
 import { EthereumMainnet } from './ethereum-mainnet'
-import { Goerli } from './goerli'
 import { Sepolia } from './sepolia'
 import { SolanaDevnet } from './solana-devnet'
 import { SolanaMainnet } from './solana-mainnet'
@@ -37,7 +36,6 @@ import { VictionTestnet } from './viction-testnet'
 import { AvalancheMainnet } from './avalanche-mainnet'
 import { AvalancheFuji } from './avalanche-fuji'
 import { MovementTestnet } from './movement-testnet'
-import { X1Testnet } from './x1-testnet'
 import { InjectiveMainnet } from './injective-mainnet'
 import { InjectiveTestnet } from './injective-testnet'
 import { BlastMainnet } from './blast-mainnet'
@@ -53,6 +51,8 @@ import { MantaPacificMainnet } from './manta-pacific-mainnet'
 import { MantaPacificTestnet } from './manta-pacific-testnet'
 import { ConfluxTestnet } from './conflux-testnet'
 import { ConfluxMainnet } from './conflux-mainnet'
+import { XLayerMainnet } from './x-layer-mainnet'
+import { XLayerTestnet } from './x-layer-testnet'
 
 /**
  * Get all chains with provider
@@ -62,7 +62,6 @@ import { ConfluxMainnet } from './conflux-mainnet'
 export const getChains = (provider?: RpcProvider) => {
   const chains: Record<string, Chain> = {
     '0x1': new EthereumMainnet(provider),
-    '0x5': new Goerli(provider),
     '0xaa36a7': new Sepolia(provider),
     '0x38': new BscMainnet(provider),
     '0x61': new BscTestnet(provider),
@@ -98,7 +97,8 @@ export const getChains = (provider?: RpcProvider) => {
     '0xa86a': new AvalancheMainnet(provider),
     '0xa869': new AvalancheFuji(provider),
     '0xd990377fe4ecf': new MovementTestnet(),
-    '0xc3': new X1Testnet(),
+    '0xc4': new XLayerMainnet(),
+    '0xc3': new XLayerTestnet(),
     '0x63f93d0f947be': new InjectiveMainnet(),
     '0xd49780436dc91': new InjectiveTestnet(),
     '0x13e31': new BlastMainnet(provider),
@@ -153,7 +153,6 @@ export const getChain = (chainId: string, provider?: RpcProvider): Chain => {
 
 export {
   EthereumMainnet,
-  Goerli,
   Sepolia,
   BscMainnet,
   BscTestnet,
@@ -189,7 +188,8 @@ export {
   AvalancheMainnet,
   AvalancheFuji,
   MovementTestnet,
-  X1Testnet,
+  XLayerMainnet,
+  XLayerTestnet,
   InjectiveMainnet,
   InjectiveTestnet,
   BlastMainnet,
