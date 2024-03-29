@@ -12,7 +12,6 @@ const customizeChainId = (name: string) => {
 
 const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Ethereum Mainnet', id: 1, curve: Curve.secp256k1 },
-  { name: 'Goerli', id: 5, curve: Curve.secp256k1 },
   { name: 'Sepolia', id: 11155111, curve: Curve.secp256k1 },
   { name: 'Binance Smart Chain Mainnet', id: 56, curve: Curve.secp256k1 },
   { name: 'Binance Smart Chain Testnet', id: 97, curve: Curve.secp256k1 },

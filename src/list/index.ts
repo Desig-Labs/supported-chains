@@ -3,7 +3,6 @@ import { Curve } from '../curve'
 import { BscMainnet } from './bsc-mainnet'
 import { BscTestnet } from './bsc-testnet'
 import { EthereumMainnet } from './ethereum-mainnet'
-import { Goerli } from './goerli'
 import { Sepolia } from './sepolia'
 import { SolanaDevnet } from './solana-devnet'
 import { SolanaMainnet } from './solana-mainnet'
@@ -63,7 +62,6 @@ import { XLayerTestnet } from './x-layer-testnet'
 export const getChains = (provider?: RpcProvider) => {
   const chains: Record<string, Chain> = {
     '0x1': new EthereumMainnet(provider),
-    '0x5': new Goerli(provider),
     '0xaa36a7': new Sepolia(provider),
     '0x38': new BscMainnet(provider),
     '0x61': new BscTestnet(provider),
@@ -155,7 +153,6 @@ export const getChain = (chainId: string, provider?: RpcProvider): Chain => {
 
 export {
   EthereumMainnet,
-  Goerli,
   Sepolia,
   BscMainnet,
   BscTestnet,
