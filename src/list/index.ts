@@ -53,6 +53,8 @@ import { ConfluxTestnet } from './conflux-testnet'
 import { ConfluxMainnet } from './conflux-mainnet'
 import { XLayerMainnet } from './x-layer-mainnet'
 import { XLayerTestnet } from './x-layer-testnet'
+import { CoreMainnet } from './core-mainnet'
+import { CoreTestnet } from './core-testnet'
 
 /**
  * Get all chains with provider
@@ -114,6 +116,8 @@ export const getChains = (provider?: RpcProvider) => {
     '0x34816d': new MantaPacificTestnet(),
     '0x406': new ConfluxMainnet(),
     '0x47': new ConfluxTestnet(),
+    '0x45c': new CoreMainnet(provider),
+    '0x45b': new CoreTestnet(),
   }
   return chains
 }
@@ -205,4 +209,6 @@ export {
   MantaPacificTestnet,
   ConfluxMainnet,
   ConfluxTestnet,
+  CoreMainnet,
+  CoreTestnet,
 }
