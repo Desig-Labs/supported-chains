@@ -10,7 +10,7 @@ export class XLayerMainnet extends Chain {
       alias: 'X Layer',
       chainId: '0xc4',
       curve: Curve.secp256k1,
-      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/x-layer-icon.svg',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/x-layer-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/x-layer-logo.svg',
       group: GroupChain.XLayer,
       getAddress: toEvmAddress,
