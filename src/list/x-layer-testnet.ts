@@ -10,7 +10,7 @@ export class XLayerTestnet extends Chain {
       alias: 'X Layer Testnet',
       chainId: '0xc3',
       curve: Curve.secp256k1,
-      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/x-layer-icon.svg',
+      icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/x-layer-icon.png',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/x-layer-logo.svg',
       group: GroupChain.XLayer,
       getAddress: toEvmAddress,
