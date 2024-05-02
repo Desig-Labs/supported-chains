@@ -1,15 +1,10 @@
-import { Chain, RpcProvider } from '../chain'
+import { Chain } from '../chain'
 import { Curve } from '../curve'
 import { GroupChain } from '../types'
-import { genEndpoint, toEvmAddress } from '../utils'
+import { toEvmAddress } from '../utils'
 
 export class BeraTestnet extends Chain {
-  constructor(provider?: RpcProvider) {
-    const endpoint = {
-      https: 'https://rpc.ankr.com/berachain_testnet',
-      wss: '',
-    }
-
+  constructor() {
     super({
       name: 'Bera Testnet',
       alias: 'Bera Testnet',
@@ -20,7 +15,9 @@ export class BeraTestnet extends Chain {
       group: GroupChain.Bera,
       getAddress: toEvmAddress,
       isMainnet: false,
-      endpoint: genEndpoint(endpoint, provider?.ankr),
+      endpoint: {
+        https: 'https://artio.rpc.berachain.com',
+      },
     })
   }
 }
