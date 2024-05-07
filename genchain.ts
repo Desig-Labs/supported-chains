@@ -30,7 +30,7 @@ const chainIds: Array<{ name: string; id: number; curve: Curve }> = [
   { name: 'Arbitrum Testnet', id: 421614, curve: Curve.secp256k1 },
   { name: 'Taiko Katla L2', id: 167008, curve: Curve.secp256k1 },
   { name: 'Base Mainnet', id: 8453, curve: Curve.secp256k1 },
-  { name: 'Base Goerli', id: 84531, curve: Curve.secp256k1 },
+  { name: 'Base Testnet', id: 84532, curve: Curve.secp256k1 },
   { name: 'Viction Mainnet', id: 88, curve: Curve.secp256k1 },
   { name: 'Viction Testnet', id: 89, curve: Curve.secp256k1 },
   { name: 'Avalanche Mainnet', id: 43114, curve: Curve.secp256k1 },

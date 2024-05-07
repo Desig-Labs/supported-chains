@@ -93,7 +93,7 @@ export const getChains = (provider?: RpcProvider) => {
     '0x24a5164fcc04': new SeiMainnet(provider),
     '0xb66e1ec8b2d65': new SeiTestnet(),
     '0x2105': new BaseMainnet(provider),
-    '0x14a33': new BaseTestnet(provider),
+    '0x14a34': new BaseTestnet(provider),
     '0x58': new VictionMainnet(),
     '0x59': new VictionTestnet(),
     '0xa86a': new AvalancheMainnet(provider),
