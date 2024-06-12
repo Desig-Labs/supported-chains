@@ -7,8 +7,8 @@ export class BeraTestnet extends Chain {
   constructor() {
     super({
       name: 'Bera Testnet',
-      alias: 'Bera Testnet',
-      chainId: '0x138d5',
+      alias: 'Berachain bArtio',
+      chainId: '0x138d4',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bera-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/bera-logo.png',
@@ -16,7 +16,7 @@ export class BeraTestnet extends Chain {
       getAddress: toEvmAddress,
       isMainnet: false,
       endpoint: {
-        https: 'https://artio.rpc.berachain.com',
+        https: 'https://bartio.rpc.berachain.com',
       },
     })
   }
