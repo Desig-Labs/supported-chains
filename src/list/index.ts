@@ -105,7 +105,7 @@ export const getChains = (provider?: RpcProvider) => {
     '0xd49780436dc91': new InjectiveTestnet(),
     '0x13e31': new BlastMainnet(provider),
     '0xa0c71fd': new BlastTestnet(provider),
-    '0x138d5': new BeraTestnet(),
+    '0x138d4': new BeraTestnet(),
     '0x34fb5e38': new Ancient8Mainnet(),
     '0x1ad1ba8': new Ancient8Testnet(),
     '0xfa': new FantomMainnet(provider),
