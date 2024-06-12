@@ -6,14 +6,14 @@ import { genEndpoint, toEvmAddress } from '../utils'
 export class BaseTestnet extends Chain {
   constructor(provider?: RpcProvider) {
     const endpoint = {
-      wss: 'wss://rpc.ankr.com/base_goerli/ws',
-      https: 'https://rpc.ankr.com/base_goerli',
+      wss: 'wss://rpc.ankr.com/base_sepolia/ws',
+      https: 'https://rpc.ankr.com/base_sepolia',
     }
 
     super({
-      name: 'Base Goerli',
-      alias: 'Base Goerli',
-      chainId: '0x14a33',
+      name: 'Base Testnet',
+      alias: 'Base Testnet',
+      chainId: '0x14a34',
       curve: Curve.secp256k1,
       icon: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/base-icon.svg',
       logo: 'https://raw.githubusercontent.com/Desig-Labs/supported-chains/master/src/static/base-logo.svg',
